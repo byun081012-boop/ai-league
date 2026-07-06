@@ -22,9 +22,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 1,
+        "text": 2,
+        "coding": 7,
         "image": null
       }
     },
@@ -49,9 +49,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 2,
+        "text": 3,
+        "coding": 8,
         "image": null
       }
     },
@@ -76,9 +76,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 3,
+        "text": 6,
+        "coding": 1,
         "image": null
       }
     },
@@ -103,8 +103,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 4,
+        "text": 4,
         "coding": null,
         "image": null
       }
@@ -130,9 +130,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 5,
+        "text": 1,
+        "coding": 5,
         "image": null
       }
     },
@@ -157,9 +157,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 6,
+        "text": 11,
+        "coding": 2,
         "image": null
       }
     },
@@ -184,8 +184,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 7,
+        "text": 7,
         "coding": null,
         "image": null
       }
@@ -211,9 +211,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 8,
+        "text": 5,
+        "coding": 9,
         "image": null
       }
     },
@@ -238,9 +238,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 9,
+        "text": 9,
+        "coding": 3,
         "image": null
       }
     },
@@ -265,9 +265,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 10,
+        "text": 12,
+        "coding": 11,
         "image": null
       }
     },
@@ -292,8 +292,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 11,
+        "text": 8,
         "coding": null,
         "image": null
       }
@@ -319,9 +319,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 12,
+        "text": 10,
+        "coding": 4,
         "image": null
       }
     },
@@ -346,9 +346,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 13,
+        "text": 13,
+        "coding": 12,
         "image": null
       }
     },
@@ -373,9 +373,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 14,
+        "text": 14,
+        "coding": 6,
         "image": null
       }
     },
@@ -400,9 +400,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 15,
+        "text": 15,
+        "coding": 10,
         "image": null
       }
     },
@@ -427,9 +427,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 16,
+        "text": 16,
+        "coding": 13,
         "image": null
       }
     }

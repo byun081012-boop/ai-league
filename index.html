@@ -11,16 +11,16 @@
    화면의 생김새만 담당. 데이터나 로직과 무관.
    ============================================================ */
 :root{
-  --bg:#161310;            /* 웜 차콜 배경 */
-  --card:#1F1B16;          /* 카드 웜 */
-  --card-2:#282219;        /* 카드 밝은 단계 */
-  --line:#2C2620;          /* 구분선 */
+  --bg:#081619;            /* 웜 차콜 배경 */
+  --card:#0D2226;          /* 카드 웜 */
+  --card-2:#123039;        /* 카드 밝은 단계 */
+  --line:#1E3D44;          /* 구분선 */
   --text:#EDEFF7;          /* 본문 */
-  --muted:#9A957F;         /* 보조 텍스트 (웜 그레이) */
-  --live:#FF3D8A;          /* 시그널 마젠타 (LIVE/강조) */
-  --gold:#FFB020;          /* 앰버 골드 (1위/유료) */
-  --free:#3DDC97;          /* 민트 (무료) */
-  --up:#3DDC97;
+  --muted:#8FB8B0;         /* 보조 텍스트 (웜 그레이) */
+  --live:#3AD3E6;          /* 시그널 마젠타 (LIVE/강조) */
+  --gold:#F5B23D;          /* 앰버 골드 (1위/유료) */
+  --free:#2FE59B;          /* 민트 (무료) */
+  --up:#2FE59B;
   --down:#FF5C7A;
   --radius:16px;
 }
@@ -61,8 +61,8 @@ header{
 
 /* ---------- 광고 자리 (공통) ---------- */
 .ad-slot{
-  border:1.5px dashed #4A3F2E;border-radius:12px;
-  color:#6B6350;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  border:1.5px dashed #2A4A50;border-radius:12px;
+  color:#6E9A93;display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:2px;text-align:center;margin:14px 0;
   background:rgba(255,255,255,0.015);
 }
@@ -87,21 +87,18 @@ header{
 .seg button:hover{color:var(--text)}
 .seg button:focus-visible{outline:2px solid var(--live);outline-offset:2px}
 .seg button.on{background:var(--card-2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line)}
-.seg.tabs button.on{color:#fff;background:linear-gradient(120deg,rgba(255,61,138,.22),rgba(255,176,32,.16));box-shadow:inset 0 0 0 1px rgba(255,61,138,.45)}
+.seg.tabs button.on{color:#fff;background:linear-gradient(120deg,rgba(58,211,230,.22),rgba(245,178,61,.16));box-shadow:inset 0 0 0 1px rgba(58,211,230,.45)}
 .seg .b-free.on{color:var(--free);box-shadow:inset 0 0 0 1px var(--free)}
 .seg .b-paid.on{color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
 
 /* ---------- 포디움 (1~3위) ---------- */
 .podium{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
-.champion{grid-column:1/-1;position:relative;border-radius:var(--radius);padding:2px;overflow:hidden}
-.champion::before{
-  content:"";position:absolute;inset:-60%;
-  background:conic-gradient(from 0deg,var(--gold),var(--live),transparent 40%,transparent 60%,var(--gold));
-  animation:spin 7s linear infinite;
+.champion{
+  grid-column:1/-1;position:relative;border-radius:var(--radius);
+  padding:1.5px;background:linear-gradient(135deg,var(--live),var(--gold));
 }
-@keyframes spin{to{transform:rotate(360deg)}}
 .champion .inner{
-  position:relative;border-radius:14px;background:linear-gradient(160deg,#2A2318,#1A1611);
+  position:relative;border-radius:14px;background:linear-gradient(160deg,#122C32,#081619);
   padding:20px 20px 18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;
 }
 .rank-big{
@@ -155,7 +152,7 @@ header{
 
 /* ---------- 주간 코멘트 ---------- */
 .editorial{
-  margin-top:26px;background:linear-gradient(160deg,#241E15,#1A1611);
+  margin-top:26px;background:linear-gradient(160deg,#0F2A30,#081619);
   border:1px solid var(--line);border-radius:var(--radius);padding:20px;
 }
 .editorial .eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--live)}
@@ -169,7 +166,7 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 .f-links a{color:var(--muted);text-decoration:none}
 .f-links a:hover{color:var(--text)}
 .f-links a:focus-visible{outline:2px solid var(--live);outline-offset:2px;border-radius:4px}
-.f-note{font-size:11.5px;color:#6B6350;margin-top:12px;line-height:1.7}
+.f-note{font-size:11.5px;color:#6E9A93;margin-top:12px;line-height:1.7}
 
 @media (max-width:560px){
   .podium{grid-template-columns:1fr}
@@ -177,7 +174,7 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
   .m-sub .access{display:block}
 }
 @media (prefers-reduced-motion:reduce){
-  .dot,.champion::before{animation:none}
+  .dot{animation:none}
   .bar i.go{transition:none}
   html{scroll-behavior:auto}
 }
@@ -187,14 +184,14 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
   position:fixed;top:14px;left:50%;transform:translateX(-50%);
   z-index:60;max-width:520px;width:calc(100% - 28px);
   display:flex;align-items:center;gap:12px;
-  background:linear-gradient(135deg,#2A2318,#1D1912);
-  border:1px solid #4A3F2E;border-radius:14px;padding:11px 12px 11px 16px;
+  background:linear-gradient(135deg,#122C32,#081619);
+  border:1px solid #2A4A50;border-radius:14px;padding:11px 12px 11px 16px;
   box-shadow:0 12px 34px rgba(0,0,0,.5);
   animation:banner-in .5s cubic-bezier(.2,.8,.2,1) both;
 }
 @keyframes banner-in{from{opacity:0;transform:translateX(-50%) translateY(-12px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
 .explain-banner.hide{display:none}
-.explain-banner .eb-q{width:22px;height:22px;flex:none;border-radius:50%;background:linear-gradient(120deg,var(--live),var(--gold));color:#1A1207;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
+.explain-banner .eb-q{width:22px;height:22px;flex:none;border-radius:50%;background:linear-gradient(120deg,var(--live),var(--gold));color:#04211D;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
 .explain-banner a.eb-link{flex:1;min-width:0;text-decoration:none;color:var(--text)}
 .explain-banner .eb-t{font-size:13.5px;font-weight:700;line-height:1.35}
 .explain-banner .eb-s{font-size:11.5px;color:var(--muted);margin-top:1px}
@@ -207,7 +204,7 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 .to-analysis{
   position:fixed;left:50%;bottom:20px;transform:translateX(-50%);
   z-index:55;display:inline-flex;align-items:center;gap:8px;
-  background:linear-gradient(135deg,#2A2318,#1D1912);
+  background:linear-gradient(135deg,#122C32,#081619);
   border:1px solid var(--gold);border-radius:99px;
   padding:11px 20px;color:var(--text);font-family:inherit;font-weight:800;font-size:14px;
   cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.5);
@@ -221,7 +218,7 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 @media (prefers-reduced-motion:reduce){.to-analysis .arw{animation:none}}
 
 /* 주간분석 강화 */
-.editorial .more{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:800;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(255,176,32,.35)}
+.editorial .more{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:800;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(245,178,61,.35)}
 .editorial .more:hover{color:#FFC94D}
 .editorial h2 .wk{display:block;font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
 </style>

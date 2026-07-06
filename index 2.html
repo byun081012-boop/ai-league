@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 리그 — 생성형 AI 실시간 순위</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard-dynamic-subset.min.css">
+<style>
+/* ============================================================
+   [3층 구조 중 3번째 층: 스타일(CSS)]
+   화면의 생김새만 담당. 데이터나 로직과 무관.
+   ============================================================ */
+:root{
+  --bg:#161310;            /* 웜 차콜 배경 */
+  --card:#1F1B16;          /* 카드 웜 */
+  --card-2:#282219;        /* 카드 밝은 단계 */
+  --line:#2C2620;          /* 구분선 */
+  --text:#EDEFF7;          /* 본문 */
+  --muted:#9A957F;         /* 보조 텍스트 (웜 그레이) */
+  --live:#FF3D8A;          /* 시그널 마젠타 (LIVE/강조) */
+  --gold:#FFB020;          /* 앰버 골드 (1위/유료) */
+  --free:#3DDC97;          /* 민트 (무료) */
+  --up:#3DDC97;
+  --down:#FF5C7A;
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  font-variant-numeric:tabular-nums;
+  line-height:1.5;
+  min-height:100vh;
+}
+.wrap{max-width:1020px;margin:0 auto;padding:0 16px}
+
+/* ---------- 헤더 ---------- */
+header{
+  padding:22px 0 6px;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:baseline;gap:10px}
+.brand h1{
+  font-weight:900;font-size:clamp(26px,5vw,34px);letter-spacing:-0.03em;
+}
+.brand h1 em{
+  font-style:normal;
+  background:linear-gradient(120deg,var(--live),var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.brand .tag{font-size:12px;color:var(--muted);letter-spacing:0.14em;font-weight:600}
+.status{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--live);box-shadow:0 0 10px var(--live)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.dot{animation:pulse 1.6s ease-in-out infinite}
+.chip-sample{
+  border:1px solid var(--line);border-radius:99px;padding:2px 9px;font-size:11px;color:var(--muted)
+}
+
+/* ---------- 광고 자리 (공통) ---------- */
+.ad-slot{
+  border:1.5px dashed #4A3F2E;border-radius:12px;
+  color:#6B6350;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;text-align:center;margin:14px 0;
+  background:rgba(255,255,255,0.015);
+}
+.ad-slot small{font-size:11px;letter-spacing:0.12em;font-weight:700}
+.ad-slot span{font-size:11.5px}
+.ad-banner{min-height:76px}
+.ad-rect{min-height:170px;max-width:420px;margin-left:auto;margin-right:auto}
+
+/* ---------- 컨트롤 (탭 + 무료/유료 필터) ---------- */
+.controls{
+  position:sticky;top:0;z-index:20;
+  background:linear-gradient(var(--bg) 82%,transparent);
+  padding:10px 0 12px;
+  display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:space-between;
+}
+.seg{display:flex;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px;gap:2px;flex-wrap:wrap}
+.seg button{
+  appearance:none;border:0;background:transparent;color:var(--muted);
+  font:inherit;font-weight:700;font-size:13.5px;padding:8px 14px;border-radius:9px;cursor:pointer;
+  transition:background .15s,color .15s;
+}
+.seg button:hover{color:var(--text)}
+.seg button:focus-visible{outline:2px solid var(--live);outline-offset:2px}
+.seg button.on{background:var(--card-2);color:var(--text);box-shadow:inset 0 0 0 1px var(--line)}
+.seg.tabs button.on{color:#fff;background:linear-gradient(120deg,rgba(255,61,138,.22),rgba(255,176,32,.16));box-shadow:inset 0 0 0 1px rgba(255,61,138,.45)}
+.seg .b-free.on{color:var(--free);box-shadow:inset 0 0 0 1px var(--free)}
+.seg .b-paid.on{color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}
+
+/* ---------- 포디움 (1~3위) ---------- */
+.podium{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px}
+.champion{grid-column:1/-1;position:relative;border-radius:var(--radius);padding:2px;overflow:hidden}
+.champion::before{
+  content:"";position:absolute;inset:-60%;
+  background:conic-gradient(from 0deg,var(--gold),var(--live),transparent 40%,transparent 60%,var(--gold));
+  animation:spin 7s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.champion .inner{
+  position:relative;border-radius:14px;background:linear-gradient(160deg,#2A2318,#1A1611);
+  padding:20px 20px 18px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;
+}
+.rank-big{
+  font-size:clamp(52px,10vw,74px);font-weight:900;letter-spacing:-0.05em;line-height:.9;
+  background:linear-gradient(180deg,#FFD97A,var(--gold));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  min-width:64px;text-align:center;
+}
+.crown{font-size:15px;display:block;-webkit-text-fill-color:initial;color:var(--gold);letter-spacing:.2em;font-weight:800;margin-bottom:2px}
+.mini-card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px;display:flex;gap:12px;align-items:center;
+}
+.rank-mid{font-size:34px;font-weight:900;color:#C9CEE9;letter-spacing:-0.04em;min-width:36px;text-align:center}
+
+/* ---------- 공통 모델 표기 ---------- */
+.m-info{flex:1;min-width:0}
+.m-name{font-weight:800;font-size:16.5px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.champion .m-name{font-size:clamp(19px,3.4vw,24px)}
+.pv-dot{width:9px;height:9px;border-radius:50%;flex:none}
+.m-sub{font-size:12.5px;color:var(--muted);margin-top:3px}
+.badge{font-size:11px;font-weight:800;border-radius:99px;padding:2.5px 9px;letter-spacing:.02em}
+.badge.free{color:#06281A;background:var(--free)}
+.badge.paid{color:#2B1D00;background:var(--gold)}
+.badge.global{color:var(--muted);border:1px solid var(--line);background:transparent;font-weight:700}
+.badge.arena{color:var(--muted);border:1px solid var(--line);background:transparent;font-weight:700;font-size:10.5px}
+.delta{font-size:12.5px;font-weight:800;white-space:nowrap}
+.delta.up{color:var(--up)}
+.delta.down{color:var(--down)}
+.delta.same{color:var(--muted)}
+.delta.new{color:var(--live)}
+.score-wrap{text-align:right;min-width:86px}
+.score{font-weight:900;font-size:20px;letter-spacing:-0.02em}
+.champion .score{font-size:clamp(24px,4vw,30px)}
+.score-label{font-size:10.5px;color:var(--muted);letter-spacing:.12em;font-weight:700}
+.bar{height:5px;border-radius:99px;background:var(--line);margin-top:6px;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--live),var(--gold));width:0}
+.bar i.go{transition:width .7s cubic-bezier(.2,.8,.2,1)}
+
+/* ---------- 리스트 (4위~) ---------- */
+.list{margin-top:12px;display:flex;flex-direction:column;gap:8px}
+.row{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:12px 14px;display:flex;align-items:center;gap:12px;
+}
+.rank-sm{font-size:19px;font-weight:900;color:#9BA2CC;min-width:30px;text-align:center;letter-spacing:-0.03em}
+.empty{
+  border:1px dashed var(--line);border-radius:var(--radius);padding:36px 16px;
+  text-align:center;color:var(--muted);font-size:14px;margin-top:12px;
+}
+
+/* ---------- 주간 코멘트 ---------- */
+.editorial{
+  margin-top:26px;background:linear-gradient(160deg,#241E15,#1A1611);
+  border:1px solid var(--line);border-radius:var(--radius);padding:20px;
+}
+.editorial .eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--live)}
+.editorial h2{font-size:19px;font-weight:900;margin:6px 0 8px;letter-spacing:-0.02em}
+.editorial p{font-size:14px;color:#C6CBE6}
+.editorial .note{margin-top:12px;font-size:12px;color:var(--muted);border-top:1px dashed var(--line);padding-top:10px}
+
+/* ---------- 푸터 ---------- */
+footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
+.f-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.f-links a{color:var(--muted);text-decoration:none}
+.f-links a:hover{color:var(--text)}
+.f-links a:focus-visible{outline:2px solid var(--live);outline-offset:2px;border-radius:4px}
+.f-note{font-size:11.5px;color:#6B6350;margin-top:12px;line-height:1.7}
+
+@media (max-width:560px){
+  .podium{grid-template-columns:1fr}
+  .score-wrap{min-width:70px}
+  .m-sub .access{display:block}
+}
+@media (prefers-reduced-motion:reduce){
+  .dot,.champion::before{animation:none}
+  .bar i.go{transition:none}
+  html{scroll-behavior:auto}
+}
+
+/* ---------- 상단 안내 배너 ("순위란?") ---------- */
+.explain-banner{
+  position:fixed;top:14px;left:50%;transform:translateX(-50%);
+  z-index:60;max-width:520px;width:calc(100% - 28px);
+  display:flex;align-items:center;gap:12px;
+  background:linear-gradient(135deg,#2A2318,#1D1912);
+  border:1px solid #4A3F2E;border-radius:14px;padding:11px 12px 11px 16px;
+  box-shadow:0 12px 34px rgba(0,0,0,.5);
+  animation:banner-in .5s cubic-bezier(.2,.8,.2,1) both;
+}
+@keyframes banner-in{from{opacity:0;transform:translateX(-50%) translateY(-12px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+.explain-banner.hide{display:none}
+.explain-banner .eb-q{width:22px;height:22px;flex:none;border-radius:50%;background:linear-gradient(120deg,var(--live),var(--gold));color:#1A1207;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
+.explain-banner a.eb-link{flex:1;min-width:0;text-decoration:none;color:var(--text)}
+.explain-banner .eb-t{font-size:13.5px;font-weight:700;line-height:1.35}
+.explain-banner .eb-s{font-size:11.5px;color:var(--muted);margin-top:1px}
+.explain-banner .eb-go{color:var(--gold);font-weight:800;white-space:nowrap}
+.explain-banner .eb-close{flex:none;background:transparent;border:1px solid var(--line);color:var(--muted);width:28px;height:28px;border-radius:8px;font-size:15px;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.explain-banner .eb-close:hover{color:var(--text);border-color:var(--muted)}
+.explain-banner .eb-close:focus-visible{outline:2px solid var(--live);outline-offset:2px}
+
+/* ---------- 하단 플로팅 버튼 (아래로 스크롤) ---------- */
+.to-analysis{
+  position:fixed;left:50%;bottom:20px;transform:translateX(-50%);
+  z-index:55;display:inline-flex;align-items:center;gap:8px;
+  background:linear-gradient(135deg,#2A2318,#1D1912);
+  border:1px solid var(--gold);border-radius:99px;
+  padding:11px 20px;color:var(--text);font-family:inherit;font-weight:800;font-size:14px;
+  cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.5);
+  transition:opacity .3s,transform .3s;
+}
+.to-analysis .arw{color:var(--gold);font-size:15px;animation:bob 1.8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.to-analysis:hover{transform:translateX(-50%) translateY(-2px)}
+.to-analysis:focus-visible{outline:2px solid var(--live);outline-offset:2px}
+.to-analysis.hide{opacity:0;pointer-events:none;transform:translateX(-50%) translateY(10px)}
+@media (prefers-reduced-motion:reduce){.to-analysis .arw{animation:none}}
+
+/* 주간분석 강화 */
+.editorial .more{display:inline-block;margin-top:14px;font-size:13.5px;font-weight:800;color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(255,176,32,.35)}
+.editorial .more:hover{color:#FFC94D}
+.editorial h2 .wk{display:block;font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--muted);margin-bottom:4px}
+</style>
+</head>
+<body>
+
+<!-- 상단 고정 안내 배너: Arena 순위가 왜 다른지 궁금한 사람을 설명 페이지로 유도 -->
+<div class="explain-banner" id="explainBanner" role="note">
+  <span class="eb-q" aria-hidden="true">?</span>
+  <a class="eb-link" href="./explainer.html">
+    <div class="eb-t">'Arena 순위'가 우리 순위와 다른 이유 <span class="eb-go">보기 →</span></div>
+    <div class="eb-s">우리는 실제로 쓸 수 있는 모델만 골라 순위를 매겨요</div>
+  </a>
+  <button class="eb-close" id="ebClose" aria-label="안내 닫기">✕</button>
+</div>
+
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <h1>AI <em>리그</em></h1>
+      <span class="tag">생성형 AI 실시간 순위</span>
+    </div>
+    <div class="status">
+      <span class="dot" aria-hidden="true"></span>
+      <span id="updated"></span>
+      <span class="chip-sample" id="srcChip">샘플 데이터</span>
+    </div>
+  </header>
+
+  <!-- [광고 자리 1] 상단 배너: 승인 후 애드센스 코드로 교체 -->
+  <div class="ad-slot ad-banner" role="note">
+    <small>AD</small>
+    <span>상단 배너 광고 자리 — 애드센스 승인 후 코드 삽입</span>
+  </div>
+
+  <!-- 컨트롤: 분야 탭 + 무료/유료 필터 -->
+  <div class="controls">
+    <div class="seg tabs" role="tablist" aria-label="분야 선택" id="tabs"></div>
+    <div class="seg" role="group" aria-label="요금제 필터" id="tiers"></div>
+  </div>
+
+  <!-- 순위 렌더링 영역 -->
+  <div id="podium" class="podium"></div>
+
+  <!-- [광고 자리 2] 인컨텐츠: 포디움 직후 = 시선이 머무는 지점 -->
+  <div class="ad-slot ad-rect" role="note">
+    <small>AD</small>
+    <span>인컨텐츠 광고 자리 (336×280)</span>
+  </div>
+
+  <div id="list" class="list"></div>
+  <div id="empty" class="empty" hidden>이 조합에 해당하는 모델이 아직 없어요. 다른 분야나 요금제를 선택해 보세요.</div>
+
+  <!-- 주간 분석: 스크롤 목적지이자 애드센스용 편집 콘텐츠 -->
+  <section class="editorial" id="analysis">
+    <div class="eyebrow">주간 분석</div>
+    <h2><span class="wk">2026년 7월 첫째 주</span>이번 주 순위, 무엇이 달라졌나</h2>
+    <p>이번 주 상위권은 유료 최상위 모델들이 촘촘하게 자리를 지킨 가운데, 무료로 쓸 수 있는 모델들의 약진이 눈에 띄었다. 무료 필터를 켜고 보면, 예전 같으면 유료권에서나 보던 성능대의 모델을 이제 무료 플랜에서도 만날 수 있다는 점이 분명해진다.</p>
+    <p>분야별로 보면 코딩 부문의 점수 격차가 가장 빠르게 좁혀지는 중이다. 상위 모델 간 점수 차가 한 자릿수까지 줄면서, 작은 업데이트 하나에도 순위가 뒤집히기 쉬운 국면이다. 반면 이미지 생성 부문은 특정 모델이 뚜렷한 선두를 지키고 있어 당분간 판도 변화가 크지 않을 전망이다.</p>
+    <p>순위를 볼 때 한 가지 기억할 점은, 각 모델 옆의 "Arena N위"가 우리 목록 순위와 다를 수 있다는 것이다. 우리는 실제로 쓸 수 있는 제품만 골라 순위를 매기기 때문이다. 그 이유가 궁금하다면 아래 링크에서 자세히 설명한다.</p>
+    <a class="more" href="./explainer.html">Arena 순위가 왜 우리 순위와 다를까? 전체 설명 보기 →</a>
+  </section>
+
+  <!-- [광고 자리 3] 하단 -->
+  <div class="ad-slot ad-banner" role="note">
+    <small>AD</small>
+    <span>하단 광고 자리</span>
+  </div>
+
+  <footer>
+    <div class="f-links">
+      <a href="./about.html">소개</a>
+      <a href="./privacy.html">개인정보처리방침</a>
+      <a href="./contact.html">문의</a>
+    </div>
+    <div class="f-note">
+      순위·점수는 공개 벤치마크 데이터를 기반으로 매일 자동 갱신되며 참고용입니다.
+      각 모델의 무료·유료 제공 여부는 실제 서비스 기준으로 정리하며, 최종 갱신 날짜를 함께 표기합니다.
+    </div>
+  </footer>
+
+</div>
+
+<!-- 하단 플로팅 버튼: 이번 주 분석으로 스크롤 -->
+<button class="to-analysis" id="toAnalysis" type="button">
+  이번 주 분석 <span class="arw" aria-hidden="true">↓</span>
+</button>
+
+<script>
+/* ============================================================
+   [3층 구조 중 1번째 층: 데이터]
+   ▼ 이 DATA 객체가 나중에 GitHub Actions 파이프라인이 매일
+     새로 만들어 줄 rankings.json과 똑같은 모양이야.
+     즉 실서비스 전환 = 아래 내용을 fetch('rankings.json')로
+     바꾸는 것뿐. 화면 코드는 하나도 안 고쳐도 됨.
+
+   - scores: 벤치마크에서 자동으로 오는 부분 (Elo 점수)
+   - product / free / access: 벤치마크에 없어서 네가 직접
+     관리하는 "모델→제품 매핑 테이블" (이 사이트의 차별점)
+   - prevRanks: 어제 순위. 파이프라인이 히스토리를 쌓는 이유
+     = 이걸로 ▲▼ 변동을 계산하기 위해서.
+   ============================================================ */
+/* 아래는 '폴백' 데이터: 실제 호스팅에선 rankings.json을 읽고,
+   로컬 미리보기(파일 직접 열기)처럼 fetch가 막힌 경우에만 이걸 씀.
+   arenaRanks = Arena 전체 등수(모든 모델 기준). 우리 목록 등수와의
+   간극을 보여주는 정직성 장치. (여기 값은 시연용 예시) */
+const FALLBACK_DATA = {
+  lastUpdated: "2026-07-05",
+  models: [
+    { id:"claude-opus-4-8", name:"Claude Opus 4.8", provider:"Anthropic", color:"#E8825A",
+      product:"Claude", free:false, access:"유료 · Pro 플랜",
+      scores:{ overall:1510, text:1512, coding:1524, image:null },
+      prevRanks:{ overall:1, text:1, coding:2, image:null },
+      arenaRanks:{ overall:2, text:2, coding:2, image:null } },
+
+    { id:"gpt-5-5-pro", name:"GPT-5.5 Pro", provider:"OpenAI", color:"#10A37F",
+      product:"ChatGPT", free:false, access:"유료 · Pro 플랜",
+      scores:{ overall:1506, text:1505, coding:1519, image:null },
+      prevRanks:{ overall:2, text:2, coding:1, image:null },
+      arenaRanks:{ overall:3, text:3, coding:3, image:null } },
+
+    { id:"gemini-3-1-pro", name:"Gemini 3.1 Pro", provider:"Google", color:"#4DA3FF",
+      product:"Gemini", free:false, access:"유료 · AI Pro (무료는 미리보기 제한)",
+      scores:{ overall:1503, text:1504, coding:1511, image:null },
+      prevRanks:{ overall:4, text:4, coding:3, image:null },
+      arenaRanks:{ overall:5, text:5, coding:5, image:null } },
+
+    { id:"claude-opus-4-7", name:"Claude Opus 4.7", provider:"Anthropic", color:"#E8825A",
+      product:"Claude", free:false, access:"유료 · Pro 플랜",
+      scores:{ overall:1495, text:1497, coding:1508, image:null },
+      prevRanks:{ overall:3, text:3, coding:4, image:null },
+      arenaRanks:{ overall:6, text:6, coding:6, image:null } },
+
+    { id:"gpt-5-5", name:"GPT-5.5", provider:"OpenAI", color:"#10A37F",
+      product:"ChatGPT", free:true, access:"무료 · 일일 제한 후 mini 전환",
+      scores:{ overall:1493, text:1494, coding:1502, image:null },
+      prevRanks:{ overall:5, text:5, coding:5, image:null },
+      arenaRanks:{ overall:8, text:8, coding:8, image:null } },
+
+    { id:"grok-4-5", name:"Grok 4.5", provider:"xAI", color:"#B7BDD6",
+      product:"Grok", free:false, access:"유료 · X Premium",
+      scores:{ overall:1487, text:1489, coding:1495, image:null },
+      prevRanks:{ overall:6, text:6, coding:7, image:null },
+      arenaRanks:{ overall:10, text:10, coding:11, image:null } },
+
+    { id:"gemini-3-flash", name:"Gemini 3 Flash", provider:"Google", color:"#4DA3FF",
+      product:"Gemini", free:true, access:"무료 · 제한 없음에 가까움",
+      scores:{ overall:1478, text:1480, coding:1490, image:null },
+      prevRanks:{ overall:8, text:8, coding:6, image:null },
+      arenaRanks:{ overall:12, text:12, coding:13, image:null } },
+
+    { id:"deepseek-v4", name:"DeepSeek V4", provider:"DeepSeek", color:"#6C7BFF",
+      product:"DeepSeek", free:true, access:"무료 · 웹/앱",
+      scores:{ overall:1474, text:1473, coding:1499, image:null },
+      prevRanks:{ overall:7, text:7, coding:9, image:null },
+      arenaRanks:{ overall:13, text:14, coding:9, image:null } },
+
+    { id:"claude-sonnet-4-6", name:"Claude Sonnet 4.6", provider:"Anthropic", color:"#E8825A",
+      product:"Claude", free:true, access:"무료 · 사용량 제한",
+      scores:{ overall:1469, text:1471, coding:1486, image:null },
+      prevRanks:{ overall:9, text:9, coding:8, image:null },
+      arenaRanks:{ overall:15, text:15, coding:15, image:null } },
+
+    { id:"qwen-3-5-max", name:"Qwen 3.5 Max", provider:"Alibaba", color:"#C084FC",
+      product:"Qwen Chat", free:true, access:"무료",
+      scores:{ overall:1452, text:1450, coding:1468, image:null },
+      prevRanks:{ overall:10, text:10, coding:10, image:null },
+      arenaRanks:{ overall:18, text:18, coding:18, image:null } },
+
+    { id:"llama-4-maverick", name:"Llama 4 Maverick", provider:"Meta", color:"#0866FF",
+      product:"Meta AI", free:true, access:"무료",
+      scores:{ overall:1447, text:1449, coding:1455, image:null },
+      prevRanks:{ overall:11, text:11, coding:11, image:null },
+      arenaRanks:{ overall:20, text:20, coding:22, image:null } },
+
+    { id:"gpt-5-5-mini", name:"GPT-5.5 mini", provider:"OpenAI", color:"#10A37F",
+      product:"ChatGPT", free:true, access:"무료 · 기본 모델",
+      scores:{ overall:1441, text:1443, coding:1452, image:null },
+      prevRanks:{ overall:12, text:12, coding:12, image:null },
+      arenaRanks:{ overall:23, text:23, coding:24, image:null } },
+
+    /* --- 이미지 생성 부문 --- */
+    { id:"nano-banana-2", name:"Nano Banana 2", provider:"Google", color:"#4DA3FF",
+      product:"Gemini", free:true, access:"무료 · 일일 생성 제한",
+      scores:{ overall:null, text:null, coding:null, image:1498 },
+      prevRanks:{ overall:null, text:null, coding:null, image:1 },
+      arenaRanks:{ overall:null, text:null, coding:null, image:1 } },
+
+    { id:"gpt-image-2", name:"GPT Image 2", provider:"OpenAI", color:"#10A37F",
+      product:"ChatGPT", free:false, access:"유료 · Plus 이상",
+      scores:{ overall:null, text:null, coding:null, image:1484 },
+      prevRanks:{ overall:null, text:null, coding:null, image:3 },
+      arenaRanks:{ overall:null, text:null, coding:null, image:3 } },
+
+    { id:"seedream-4", name:"Seedream 4", provider:"ByteDance", color:"#3DDCC8",
+      product:"Dreamina", free:true, access:"무료 · 크레딧제",
+      scores:{ overall:null, text:null, coding:null, image:1476 },
+      prevRanks:{ overall:null, text:null, coding:null, image:2 },
+      arenaRanks:{ overall:null, text:null, coding:null, image:4 } },
+
+    { id:"flux-2-pro", name:"FLUX 2 Pro", provider:"Black Forest Labs", color:"#FF9E5E",
+      product:"FLUX", free:false, access:"유료 · API/파트너 앱",
+      scores:{ overall:null, text:null, coding:null, image:1461 },
+      prevRanks:{ overall:null, text:null, coding:null, image:null },
+      arenaRanks:{ overall:null, text:null, coding:null, image:6 } } /* prevRank 없음 → NEW */
+  ]
+};
+
+/* ============================================================
+   [3층 구조 중 2번째 층: 렌더링 로직(JS)]
+   데이터를 "읽어서" 화면을 그리는 부분.
+   데이터가 바뀌어도 이 코드는 그대로 재사용됨.
+   ============================================================ */
+const CATS  = [ ["overall","종합"], ["text","텍스트"], ["coding","코딩"], ["image","이미지"] ];
+const TIERS = [ ["all","전체"], ["free","무료"], ["paid","유료"] ];
+let cat = "overall", tier = "all";
+
+const $ = s => document.querySelector(s);
+let DATA = FALLBACK_DATA;   // fetch 성공 시 rankings.json로 교체됨
+
+/* 탭/필터 버튼 만들기 */
+function buildControls(){
+  $("#tabs").innerHTML = CATS.map(([k,label]) =>
+    `<button role="tab" data-k="${k}" aria-selected="${k===cat}" class="${k===cat?"on":""}">${label}</button>`).join("");
+  $("#tiers").innerHTML = TIERS.map(([k,label]) =>
+    `<button data-k="${k}" aria-pressed="${k===tier}" class="${k===tier?"on":""} ${k==="free"?"b-free":k==="paid"?"b-paid":""}">${label}</button>`).join("");
+  $("#tabs").querySelectorAll("button").forEach(b => b.onclick = () => { cat = b.dataset.k; render(); });
+  $("#tiers").querySelectorAll("button").forEach(b => b.onclick = () => { tier = b.dataset.k; render(); });
+}
+
+/* 순위 계산:
+   1) 해당 분야 점수가 있는 모델만 골라 점수순 정렬 → "전체 순위"
+   2) 어제 순위(prevRanks)와 비교해 ▲▼ 변동 계산
+   3) 무료/유료 필터는 그 다음에 적용
+      → 필터를 걸어도 "전체 N위" 정보를 함께 보여줄 수 있음 */
+function compute(){
+  const ranked = DATA.models
+    .filter(m => m.scores[cat] != null)
+    .sort((a,b) => b.scores[cat] - a.scores[cat])
+    .map((m,i) => {
+      const prev = m.prevRanks[cat];
+      const globalRank = i + 1;
+      let delta;
+      if (prev == null) delta = { cls:"new",  label:"NEW" };
+      else if (prev > globalRank) delta = { cls:"up",   label:"▲" + (prev - globalRank) };
+      else if (prev < globalRank) delta = { cls:"down", label:"▼" + (globalRank - prev) };
+      else delta = { cls:"same", label:"–" };
+      return { ...m, globalRank, delta };
+    });
+  return tier === "all" ? ranked : ranked.filter(m => tier === "free" ? m.free : !m.free);
+}
+
+/* 화면에 쓸 조각들 */
+const badge = m => `<span class="badge ${m.free?"free":"paid"}">${m.free?"무료":"유료"}</span>`;
+/* Arena 전체 등수 칩 — 우리 목록 등수와 별개로, 모든 모델 기준의 진짜 등수.
+   뭔가 빠져도 방문자가 오해하지 않게 하는 정직성 장치. */
+const arenaChip = m => {
+  const r = m.arenaRanks ? m.arenaRanks[cat] : null;
+  return r ? `<span class="badge arena" title="Arena 전체 순위">Arena ${r}위</span>` : "";
+};
+const nameLine = m =>
+  `<span class="pv-dot" style="background:${m.color}" aria-hidden="true"></span>
+   <span>${m.name}</span> ${badge(m)} ${arenaChip(m)}
+   <span class="delta ${m.delta.cls}">${m.delta.label}</span>`;
+const subLine = m => `${m.provider} · ${m.product} · <span class="access">${m.access}</span>`;
+
+/* 점수 막대: 현재 화면의 최고/최저 점수 기준 상대 길이 */
+function barPct(list, m){
+  const max = list[0].scores[cat], min = list[list.length-1].scores[cat];
+  if (max === min) return 100;
+  return 25 + 75 * (m.scores[cat] - min) / (max - min);
+}
+
+function render(){
+  buildControls();
+  $("#updated").textContent = "매일 갱신 · " + (DATA.lastUpdated || "");
+  const list = compute();
+  const pod = $("#podium"), rows = $("#list"), empty = $("#empty");
+
+  if (!list.length){
+    pod.innerHTML = ""; rows.innerHTML = "";
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+
+  const tierWord = tier === "free" ? "무료 " : tier === "paid" ? "유료 " : "";
+  const catWord  = CATS.find(c => c[0] === cat)[1];
+
+  /* 1위: 챔피언 카드 */
+  const c = list[0];
+  let html = `
+    <div class="champion">
+      <div class="inner">
+        <div class="rank-big"><span class="crown">${tierWord}${catWord} 1위</span>1</div>
+        <div class="m-info">
+          <div class="m-name">${nameLine(c)}</div>
+          <div class="m-sub">${subLine(c)}</div>
+          <div class="bar"><i data-w="${barPct(list,c)}"></i></div>
+        </div>
+        <div class="score-wrap">
+          <div class="score">${c.scores[cat]}</div>
+          <div class="score-label">ELO</div>
+        </div>
+      </div>
+    </div>`;
+
+  /* 2~3위: 미니 카드 */
+  list.slice(1,3).forEach((m,i) => {
+    html += `
+      <div class="mini-card">
+        <div class="rank-mid">${i+2}</div>
+        <div class="m-info">
+          <div class="m-name">${nameLine(m)}</div>
+          <div class="m-sub">${subLine(m)}</div>
+          <div class="bar"><i data-w="${barPct(list,m)}"></i></div>
+        </div>
+        <div class="score-wrap">
+          <div class="score">${m.scores[cat]}</div>
+          <div class="score-label">ELO</div>
+        </div>
+      </div>`;
+  });
+  pod.innerHTML = html;
+
+  /* 4위~: 리스트 행 */
+  rows.innerHTML = list.slice(3).map((m,i) => `
+    <div class="row">
+      <div class="rank-sm">${i+4}</div>
+      <div class="m-info">
+        <div class="m-name">${nameLine(m)}</div>
+        <div class="m-sub">${subLine(m)}</div>
+      </div>
+      <div class="score-wrap">
+        <div class="score">${m.scores[cat]}</div>
+        <div class="score-label">ELO</div>
+      </div>
+    </div>`).join("");
+
+  /* 점수 막대 애니메이션 */
+  requestAnimationFrame(() => {
+    document.querySelectorAll(".bar i").forEach(el => {
+      el.classList.add("go");
+      el.style.width = el.dataset.w + "%";
+    });
+  });
+}
+
+/* ── 초기화 ──
+   실제 호스팅: rankings.json(파이프라인 결과)을 읽어 실시간 데이터로.
+   로컬에서 파일을 그냥 열면 브라우저 보안상 fetch가 막히므로 → 폴백 데이터 사용.
+   즉 이 파일 하나가 두 상황을 모두 처리함. */
+function markSource(kind){
+  const chip = $("#srcChip");
+  if (!chip) return;
+  if (kind === "live"){ chip.textContent = "실시간 데이터"; chip.style.color = "var(--free)"; chip.style.borderColor = "var(--free)"; }
+  else { chip.textContent = "샘플 데이터"; }
+}
+
+async function init(){
+  try {
+    const res = await fetch("rankings.json", { cache: "no-store" });
+    if (res.ok){
+      const j = await res.json();
+      if (j && Array.isArray(j.models) && j.models.length){
+        DATA = j;
+        markSource("live");
+      } else {
+        markSource("sample");
+      }
+    } else {
+      markSource("sample");
+    }
+  } catch (e){
+    // file:// 로 열었거나 파일이 아직 없음 → 폴백 유지
+    markSource("sample");
+  }
+  render();
+}
+
+init();
+
+/* ── 상단 안내 배너: 닫기 (한 세션 동안 유지) ── */
+(function(){
+  const banner = document.getElementById("explainBanner");
+  const closeBtn = document.getElementById("ebClose");
+  if (!banner || !closeBtn) return;
+  // 이번 세션에 이미 닫았으면 처음부터 숨김
+  try { if (sessionStorage.getItem("explainClosed") === "1") banner.classList.add("hide"); } catch(e){}
+  closeBtn.addEventListener("click", () => {
+    banner.classList.add("hide");
+    try { sessionStorage.setItem("explainClosed", "1"); } catch(e){}
+  });
+})();
+
+/* ── 하단 플로팅 버튼: 분석으로 스크롤 + 도달 시 숨김 ── */
+(function(){
+  const btn = document.getElementById("toAnalysis");
+  const target = document.getElementById("analysis");
+  if (!btn || !target) return;
+
+  btn.addEventListener("click", () => {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+
+  // 분석 영역이 화면에 들어오면 버튼을 숨기고, 벗어나면 다시 표시
+  if ("IntersectionObserver" in window){
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(en => btn.classList.toggle("hide", en.isIntersecting));
+    }, { rootMargin: "0px 0px -40% 0px" });
+    io.observe(target);
+  }
+})();
+</script>
+</body>
+</html>

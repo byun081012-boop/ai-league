@@ -85,9 +85,9 @@ def fetch_raw_scores():
     for cat, (subset, category_value) in CATEGORY_SOURCES.items():
         ds = load_dataset(
             DATASET, subset, split="latest",
-            filters=[("category", "==", category_value)],
-            verification_mode="none",
+            streaming=True,
         )
+        ds = [r for r in ds if r.get("category") == category_value]
         rows = [dict(model_name=r["model_name"],
                      organization=r.get("organization", ""),
                      rating=r["rating"],

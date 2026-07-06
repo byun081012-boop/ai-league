@@ -1,0 +1,437 @@
+{
+  "lastUpdated": "2026-07-05",
+  "models": [
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료 · 사용량 제한",
+      "scores": {
+        "overall": 1488,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 6,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-5.5-high",
+      "name": "GPT-5.5 High",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": false,
+      "access": "유료 · Plus 이상",
+      "scores": {
+        "overall": 1487,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 7,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-5.5",
+      "name": "GPT-5.5",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": true,
+      "access": "무료 · 일일 제한 후 mini 전환",
+      "scores": {
+        "overall": 1481,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 8,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-3.5-flash",
+      "name": "Gemini 3.5 Flash",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 미리보기",
+      "scores": {
+        "overall": 1481,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 9,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "claude-opus-4-8-thinking",
+      "name": "Claude Opus 4.8 (사고)",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro · 확장 사고",
+      "scores": {
+        "overall": 1477,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 10,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-5.4",
+      "name": "GPT-5.4",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1475,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 12,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro 플랜",
+      "scores": {
+        "overall": 1468,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 13,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "kimi-k2.6",
+      "name": "Kimi K2.6",
+      "provider": "Moonshot",
+      "color": "#6C7BFF",
+      "product": "Kimi",
+      "free": true,
+      "access": "무료 · 웹/앱",
+      "scores": {
+        "overall": 1454,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 15,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-3.1-pro-preview",
+      "name": "Gemini 3.1 Pro",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": false,
+      "access": "유료 · AI Pro",
+      "scores": {
+        "overall": 1441,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 18,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "qwen3.7-plus",
+      "name": "Qwen 3.7 Plus",
+      "provider": "Alibaba",
+      "color": "#C084FC",
+      "product": "Qwen Chat",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1439,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 19,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "minimax-m3",
+      "name": "MiniMax M3",
+      "provider": "MiniMax",
+      "color": "#3DDCC8",
+      "product": "MiniMax",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1435,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 20,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-3-pro",
+      "name": "Gemini 3 Pro",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": false,
+      "access": "유료 · AI Pro",
+      "scores": {
+        "overall": 1433,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 21,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemma-4-31b",
+      "name": "Gemma 4 31B",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Google AI Studio",
+      "free": true,
+      "access": "무료 · 오픈 모델",
+      "scores": {
+        "overall": 1423,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 23,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "claude-haiku-4-5-20251001",
+      "name": "Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1421,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 25,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-3-flash",
+      "name": "Gemini 3 Flash",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1413,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 28,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-5.2",
+      "name": "GPT-5.2",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1401,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 31,
+        "text": null,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    }
+  ]
+}

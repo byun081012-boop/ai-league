@@ -86,7 +86,7 @@ def fetch_raw_scores():
         ds = load_dataset(
             DATASET, subset, split="latest",
             filters=[("category", "==", category_value)],
-            verification_mode="no checks",
+            verification_mode="none",
         )
         rows = [dict(model_name=r["model_name"],
                      organization=r.get("organization", ""),

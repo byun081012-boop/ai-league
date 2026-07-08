@@ -29,6 +29,33 @@
       }
     },
     {
+      "id": "claude-opus-4-7-thinking",
+      "name": "Claude Opus 4.7 사고",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro · 확장 사고",
+      "scores": {
+        "overall": 1502,
+        "text": 1489,
+        "coding": 1559,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 3,
+        "text": 4.0,
+        "coding": 4,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
       "id": "claude-opus-4-6",
       "name": "Claude Opus 4.6",
       "provider": "Anthropic",
@@ -218,33 +245,6 @@
       }
     },
     {
-      "id": "gpt-5.5",
-      "name": "GPT-5.5 Instant",
-      "provider": "OpenAI",
-      "color": "#10A37F",
-      "product": "ChatGPT",
-      "free": true,
-      "access": "무료 · 제한적 이용",
-      "scores": {
-        "overall": 1475,
-        "text": 1463,
-        "coding": null,
-        "image": null
-      },
-      "arenaRanks": {
-        "overall": 16,
-        "text": 18.0,
-        "coding": null,
-        "image": null
-      },
-      "prevRanks": {
-        "overall": 9,
-        "text": 9,
-        "coding": null,
-        "image": null
-      }
-    },
-    {
       "id": "gemini-3-flash",
       "name": "Gemini 3 Flash",
       "provider": "Google",
@@ -268,6 +268,33 @@
         "overall": 10,
         "text": 7,
         "coding": 11,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-5.5-instant",
+      "name": "GPT-5.5 Instant",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": true,
+      "access": "무료 · 제한적 이용",
+      "scores": {
+        "overall": 1473,
+        "text": 1419,
+        "coding": null,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 21,
+        "text": 84.0,
+        "coding": null,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null
       }
     },
@@ -299,110 +326,56 @@
       }
     },
     {
-      "id": "qwen3.7-plus",
-      "name": "Qwen 3.7 Plus",
-      "provider": "Alibaba",
-      "color": "#C084FC",
-      "product": "Qwen Chat",
+      "id": "claude-sonnet-5-thinking",
+      "name": "Claude Sonnet 5 사고",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
       "free": true,
-      "access": "무료",
+      "access": "무료 · 확장 사고",
       "scores": {
-        "overall": 1463,
-        "text": 1462,
-        "coding": null,
+        "overall": 1464,
+        "text": 1445,
+        "coding": 1551,
         "image": null
       },
       "arenaRanks": {
-        "overall": 33,
-        "text": 21.0,
-        "coding": null,
+        "overall": 32,
+        "text": 36.0,
+        "coding": 6,
         "image": null
       },
       "prevRanks": {
-        "overall": 12,
-        "text": 10,
+        "overall": null,
+        "text": null,
         "coding": null,
         "image": null
       }
     },
     {
-      "id": "kimi-k2.6",
-      "name": "Kimi K2.6",
-      "provider": "Moonshot",
-      "color": "#6C7BFF",
-      "product": "Kimi",
-      "free": true,
-      "access": "무료 · 웹/앱",
-      "scores": {
-        "overall": 1461,
-        "text": 1455,
-        "coding": 1514,
-        "image": null
-      },
-      "arenaRanks": {
-        "overall": 34,
-        "text": 24.0,
-        "coding": 14,
-        "image": null
-      },
-      "prevRanks": {
-        "overall": 13,
-        "text": 12,
-        "coding": 7,
-        "image": null
-      }
-    },
-    {
-      "id": "gemma-4-31b",
-      "name": "Gemma 4 31B",
+      "id": "gemini-3.1-flash-lite-preview",
+      "name": "Gemini 3.1 Flash-Lite",
       "provider": "Google",
       "color": "#4DA3FF",
-      "product": "Google AI Studio",
+      "product": "Gemini",
       "free": true,
-      "access": "무료 · 오픈 모델",
+      "access": "무료 · 기본 탑재, 넉넉한 사용량",
       "scores": {
-        "overall": 1451,
-        "text": 1441,
-        "coding": 1371,
+        "overall": 1433,
+        "text": 1415,
+        "coding": 1253,
         "image": null
       },
       "arenaRanks": {
-        "overall": 45,
-        "text": 43.0,
-        "coding": 54,
+        "overall": 72,
+        "text": 95.0,
+        "coding": 78,
         "image": null
       },
       "prevRanks": {
-        "overall": 14,
-        "text": 14,
-        "coding": 12,
-        "image": null
-      }
-    },
-    {
-      "id": "minimax-m3",
-      "name": "MiniMax M3",
-      "provider": "MiniMax",
-      "color": "#3DDCC8",
-      "product": "MiniMax",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": 1447,
-        "text": 1439,
-        "coding": 1501,
-        "image": null
-      },
-      "arenaRanks": {
-        "overall": 54,
-        "text": 48.0,
-        "coding": 16,
-        "image": null
-      },
-      "prevRanks": {
-        "overall": 15,
-        "text": 15,
-        "coding": 9,
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null
       }
     },

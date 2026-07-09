@@ -20,5 +20,5 @@
   "gemini-3.1-pro-preview":         {"name":"Gemini 3.1 Pro","product":"Gemini","free":true,"access":"무료 · 사용량 매우 제한적(질문 2개 수준)"},
   "gemini-3.5-flash":               {"name":"Gemini 3.5 Flash","product":"Gemini","free":true,"access":"무료 · 유료 대비 사용량 제한"},
   "gemini-3-flash":                 {"name":"Gemini 3 Flash","product":"Gemini","free":true,"access":"무료"},
-  "claude-fable-5":             {"name":"Fable 5","product":"Claude","free":false,"access":"유료 · 주간한도의 최대 50% 까지 사용"}
+  "claude-fable-5":             {"name":"Claude Fable 5","product":"Claude","free":false,"access":"유료 · 주간한도의 최대 50% 까지 사용"}
 }

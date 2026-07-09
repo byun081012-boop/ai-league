@@ -33,4 +33,3 @@ jobs:
           gh issue create \
             --title "$TITLE" \
             --body-file summary.md \
-            --label "weekly-report"

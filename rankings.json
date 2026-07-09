@@ -8,7 +8,7 @@
       "color": "#E8825A",
       "product": "Claude",
       "free": false,
-      "access": "유료 · 주간한도의 최대 50% 까지 사용",
+      "access": "유료 · 주간한도의 최대 50%까지 사용",
       "scores": {
         "overall": 1509,
         "text": 1495,
@@ -143,7 +143,7 @@
       "color": "#4DA3FF",
       "product": "Gemini",
       "free": true,
-      "access": "무료 · 사용량 매우 제한적(질문 2개 수준)",
+      "access": "무료 · 사용량 매우 제한적",
       "scores": {
         "overall": 1486,
         "text": 1480,
@@ -430,6 +430,222 @@
         "overall": 16,
         "text": 16,
         "coding": 13,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-image-2 (medium)",
+      "name": "GPT Image 2",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": false,
+      "access": "유료 · Plus 이상",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1385
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-3.1-flash-image-preview (nano-banana-2) [web-search]",
+      "name": "Nano Banana 2",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 일일 생성 제한",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1270
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 4
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-3-pro-image-preview (nano-banana-pro)",
+      "name": "Nano Banana Pro",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 일일 생성 제한",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1232
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 9
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "flux-2-pro",
+      "name": "FLUX 2 Pro",
+      "provider": "Bfl",
+      "color": "#9A957F",
+      "product": "FLUX",
+      "free": false,
+      "access": "유료 · API/파트너 앱",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1155
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 21
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gemini-2.5-flash-image-preview (nano-banana)",
+      "name": "Nano Banana",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 일일 생성 제한",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1151
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 24
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "seedream-4.5",
+      "name": "Seedream 4.5",
+      "provider": "Bytedance",
+      "color": "#9A957F",
+      "product": "Dreamina",
+      "free": true,
+      "access": "무료 · 크레딧제",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1146
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 27
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "seedream-4-2k",
+      "name": "Seedream 4",
+      "provider": "Bytedance",
+      "color": "#9A957F",
+      "product": "Dreamina",
+      "free": true,
+      "access": "무료 · 크레딧제",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1141
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 28
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
+    {
+      "id": "gpt-image-1",
+      "name": "GPT Image 1",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": false,
+      "access": "유료 · Plus 이상",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1115
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 38
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null
       }
     }

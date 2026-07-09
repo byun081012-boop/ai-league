@@ -51,5 +51,14 @@
     "claude-haiku-4-5-20251001": 13,
     "gemini-3.1-flash-lite-preview": 14
   },
-  "image": {}
+  "image": {
+    "gpt-image-2 (medium)": 1,
+    "gemini-3.1-flash-image-preview (nano-banana-2) [web-search]": 2,
+    "gemini-3-pro-image-preview (nano-banana-pro)": 3,
+    "flux-2-pro": 4,
+    "gemini-2.5-flash-image-preview (nano-banana)": 5,
+    "seedream-4.5": 6,
+    "seedream-4-2k": 7,
+    "gpt-image-1": 8
+  }
 }

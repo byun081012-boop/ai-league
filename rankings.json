@@ -457,7 +457,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 1
       }
     },
     {
@@ -484,7 +484,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 2
       }
     },
     {
@@ -511,7 +511,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 3
       }
     },
     {
@@ -538,7 +538,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 4
       }
     },
     {
@@ -565,7 +565,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 5
       }
     },
     {
@@ -592,7 +592,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 6
       }
     },
     {
@@ -619,7 +619,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 7
       }
     },
     {
@@ -646,7 +646,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null
+        "image": 8
       }
     }
   ]

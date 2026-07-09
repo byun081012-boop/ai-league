@@ -1,0 +1,36 @@
+name: Weekly Summary
+
+on:
+  schedule:
+    # 매주 월요일 한국시간 오전 9시 (UTC 0시)에 실행
+    - cron: '0 0 * * 1'
+  workflow_dispatch:   # 수동 실행 버튼도 제공
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate weekly summary
+        run: python weekly_summary.py
+
+      - name: Create GitHub Issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TITLE="📊 주간 순위 변동 리포트 — $(date +'%Y-%m-%d')"
+          gh issue create \
+            --title "$TITLE" \
+            --body-file summary.md \
+            --label "weekly-report"

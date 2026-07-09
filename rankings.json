@@ -1,6 +1,33 @@
 {
-  "lastUpdated": "2026-07-08",
+  "lastUpdated": "2026-07-09",
   "models": [
+    {
+      "id": "claude-fable-5",
+      "name": "Claude Fable 5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · 주간한도의 최대 50% 까지 사용",
+      "scores": {
+        "overall": 1509,
+        "text": 1495,
+        "coding": 1653,
+        "image": null
+      },
+      "arenaRanks": {
+        "overall": 1,
+        "text": 3.0,
+        "coding": 1,
+        "image": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null
+      }
+    },
     {
       "id": "claude-opus-4-6-thinking",
       "name": "Claude Opus 4.6 사고",
@@ -24,7 +51,7 @@
       "prevRanks": {
         "overall": 1,
         "text": 1,
-        "coding": 3,
+        "coding": 5,
         "image": null
       }
     },
@@ -49,9 +76,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 2,
+        "text": 3,
+        "coding": 2,
         "image": null
       }
     },
@@ -76,9 +103,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 2,
+        "overall": 3,
         "text": 2,
-        "coding": 4,
+        "coding": 6,
         "image": null
       }
     },
@@ -103,9 +130,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 3,
-        "text": 3,
-        "coding": 2,
+        "overall": 4,
+        "text": 4,
+        "coding": 3,
         "image": null
       }
     },
@@ -130,8 +157,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 4,
-        "text": 5,
+        "overall": 5,
+        "text": 6,
         "coding": 10,
         "image": null
       }
@@ -157,8 +184,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 5,
-        "text": 8,
+        "overall": 6,
+        "text": 9,
         "coding": 1,
         "image": null
       }
@@ -184,8 +211,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 6,
-        "text": 6,
+        "overall": 7,
+        "text": 7,
         "coding": null,
         "image": null
       }
@@ -211,9 +238,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 7,
-        "text": 4,
-        "coding": 8,
+        "overall": 8,
+        "text": 5,
+        "coding": 9,
         "image": null
       }
     },
@@ -238,9 +265,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 8,
-        "text": 13,
-        "coding": 5,
+        "overall": 9,
+        "text": 11,
+        "coding": 7,
         "image": null
       }
     },
@@ -266,7 +293,7 @@
       },
       "prevRanks": {
         "overall": 10,
-        "text": 7,
+        "text": 8,
         "coding": 11,
         "image": null
       }
@@ -292,8 +319,8 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 11,
+        "text": 13,
         "coding": null,
         "image": null
       }
@@ -319,9 +346,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 11,
-        "text": 11,
-        "coding": 6,
+        "overall": 12,
+        "text": 10,
+        "coding": 8,
         "image": null
       }
     },
@@ -346,9 +373,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 13,
+        "text": 12,
+        "coding": 4,
         "image": null
       }
     },
@@ -373,9 +400,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
+        "overall": 14,
+        "text": 14,
+        "coding": 13,
         "image": null
       }
     },
@@ -400,9 +427,9 @@
         "image": null
       },
       "prevRanks": {
-        "overall": 16,
-        "text": 16,
-        "coding": 13,
+        "overall": 15,
+        "text": 15,
+        "coding": 12,
         "image": null
       }
     }

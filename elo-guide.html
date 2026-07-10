@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elo 점수란? AI 순위의 기준을 쉽게 이해하기 · AI 리그</title>
+<meta name="description" content="AI 모델 순위에서 사용되는 Elo 점수가 무엇인지, 어떻게 계산되는지, 왜 중요한지를 쉽게 설명합니다.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard-dynamic-subset.min.css">
+<style>
+:root{
+  --bg0:#081619;--card:#0D2226;--card-2:#123039;--line:#1E3D44;
+  --text:#EAFBF4;--muted:#8FB8B0;--live:#3AD3E6;--gold:#F5B23D;--free:#2FE59B;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg0);color:var(--text);line-height:1.78;font-family:"Pretendard Variable",Pretendard,-apple-system,sans-serif;min-height:100vh}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+header{padding:22px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.brand h1{font-weight:900;font-size:26px;letter-spacing:-0.03em;color:var(--text)}
+.brand h1 em{font-style:normal;background:linear-gradient(120deg,var(--live),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.brand .tag{font-size:12px;color:var(--muted);letter-spacing:0.14em;font-weight:600}
+.back{font-size:13px;color:var(--muted);text-decoration:none;border:1px solid var(--line);border-radius:99px;padding:6px 14px}
+.back:hover{color:var(--text)}
+main{padding:34px 0 20px}
+.eyebrow{font-size:11px;font-weight:800;letter-spacing:.18em;color:var(--live)}
+h2.title{font-size:clamp(26px,5.6vw,36px);font-weight:900;letter-spacing:-0.03em;margin:8px 0 8px;line-height:1.18}
+.lead{font-size:16.5px;color:#C6CBE6;margin-bottom:28px}
+section.block{margin:28px 0}
+section.block h3{font-size:19px;font-weight:800;margin-bottom:10px}
+section.block p{font-size:15.5px;color:#C6CBE6;margin-bottom:12px}
+strong{color:var(--text);font-weight:700}
+.callout{background:linear-gradient(160deg,#0F2A30,#081619);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:16px 0}
+.callout p{font-size:14.5px;color:#C6CBE6;margin:0}
+.example{border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:10px;padding:16px 18px;margin:16px 0;background:rgba(255,255,255,0.015)}
+.example .lbl{font-size:12px;font-weight:800;color:var(--gold);margin-bottom:6px}
+.example p{font-size:14.5px;color:#C6CBE6;margin:0}
+.cta{display:flex;justify-content:center;margin:30px 0 6px}
+.cta a{background:linear-gradient(120deg,var(--live),var(--gold));color:#04211D;font-weight:800;font-size:15px;text-decoration:none;padding:13px 26px;border-radius:99px}
+footer{margin-top:34px;padding:22px 0 46px;border-top:1px solid var(--line)}
+.f-links{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+.f-links a{color:var(--muted);text-decoration:none}
+.f-links a:hover{color:var(--text)}
+.f-note{font-size:11.5px;color:#6E9A93;margin-top:12px;line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="./" class="brand"><h1>AI <em>리그</em></h1><span class="tag">생성형 AI 실시간 순위</span></a>
+    <a href="./" class="back">← 순위 보기</a>
+  </header>
+  <main>
+    <div class="eyebrow">개념 해설</div>
+    <h2 class="title">Elo 점수란?<br>AI 순위의 기준을 이해하기</h2>
+    <p class="lead">AI 리그의 순위표에서 각 모델 옆에 적힌 "1510", "1487" 같은 숫자가 바로 Elo 점수입니다. 이게 뭔지, 어떻게 매겨지는지 쉽게 설명합니다.</p>
+
+    <section class="block">
+      <h3>원래 체스에서 왔다</h3>
+      <p>Elo 점수는 원래 <strong>체스 선수의 실력을 숫자로 표현</strong>하기 위해 1960년대에 만들어진 시스템입니다. 아르파드 엘로(Arpad Elo)라는 물리학자가 고안했고, 이후 바둑, e스포츠, 그리고 지금은 AI 모델 평가에까지 쓰이고 있습니다.</p>
+      <p>핵심 원리는 단순합니다. <strong>강한 상대를 이기면 점수가 많이 오르고, 약한 상대에게 지면 많이 떨어진다.</strong> 이 한 줄이 Elo의 전부입니다.</p>
+    </section>
+
+    <section class="block">
+      <h3>AI에선 어떻게 쓰이나</h3>
+      <p>Arena(arena.ai) 같은 벤치마크 사이트에서는 사람들이 두 AI 모델의 답변을 나란히 놓고 <strong>"어느 쪽이 더 나은지" 블라인드 투표</strong>를 합니다. 어떤 모델이 만든 답인지 모른 채 순수하게 품질만 보고 고르는 거죠.</p>
+      <p>수백만 건의 이런 대결 결과를 Elo 공식에 넣으면, 각 모델의 "실력 점수"가 산출됩니다. 사람들이 일관되게 더 좋다고 고른 모델은 점수가 올라가고, 덜 골린 모델은 내려갑니다.</p>
+      <div class="example">
+        <div class="lbl">예를 들면</div>
+        <p>Elo 1510인 모델 A와 Elo 1480인 모델 B가 대결해서 A가 이기면 → 예상대로니까 A는 소폭 상승, B는 소폭 하락. 반대로 B가 이기면 → 이변이니까 B는 대폭 상승, A는 대폭 하락. 이게 반복되면서 점수가 수렴합니다.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h3>점수 차이는 뭘 의미하나</h3>
+      <p>Elo 점수는 <strong>절대적인 "능력치"가 아니라 상대적인 위치</strong>입니다. 1500점이 "잘하는 것"이고 1400점이 "못하는 것"이라는 기준선은 없습니다. 중요한 건 모델 간의 점수 차이예요.</p>
+      <p>대략적으로 <strong>Elo 100점 차이</strong>는 "높은 쪽이 대결에서 약 64% 확률로 이긴다"는 뜻입니다. 200점 차이면 약 76%, 400점 차이면 약 91%입니다. 점수 차가 클수록 실력 격차가 분명하다는 거죠.</p>
+      <div class="callout">
+        <p>그래서 상위권에서 Elo 1510과 1505의 차이는 사실상 "거의 비슷한 실력"이라는 뜻입니다. 반면 1510과 1400의 차이는 확실한 격차를 보여줍니다. 순위표를 볼 때 등수보다 점수 차이를 함께 보는 게 더 정확한 비교입니다.</p>
+      </div>
+    </section>
+
+    <section class="block">
+      <h3>Elo의 한계도 있다</h3>
+      <p>Elo 점수가 완벽한 평가는 아닙니다. 알아두면 좋은 한계가 몇 가지 있어요.</p>
+      <p><strong>분야에 따라 다릅니다.</strong> 종합 점수가 높다고 모든 작업에서 최고인 건 아닙니다. 코딩에 특화된 모델이 종합에서는 낮을 수 있고, 반대도 마찬가지입니다. 그래서 AI 리그는 종합·텍스트·코딩·이미지 부문을 나눠 보여줍니다.</p>
+      <p><strong>투표자에 따라 달라질 수 있습니다.</strong> 기술적인 질문을 많이 하는 사용자 풀에서 매겨진 점수는, 일상 대화 위주의 풀과 결과가 다를 수 있습니다.</p>
+      <p><strong>시간에 따라 변합니다.</strong> 새 모델이 출시되거나 기존 모델이 업데이트되면 순위가 바뀝니다. AI 리그가 매일 갱신하는 이유이기도 합니다.</p>
+    </section>
+
+    <section class="block">
+      <h3>AI 리그에서 Elo를 보는 법</h3>
+      <p>순위표에서 각 모델 옆의 숫자가 Elo 점수이고, ▲▼ 표시가 전날 대비 변동입니다. "Arena N위"라고 적힌 칩은 우리가 큐레이션한 목록이 아닌 전체 벤치마크 기준 순위예요. 자세한 내용은 <a href="./explainer.html" style="color:var(--gold);text-decoration:none;border-bottom:1px solid rgba(245,178,61,.35)">Arena 순위가 왜 우리 순위와 다를까?</a> 페이지에서 다룹니다.</p>
+    </section>
+
+    <div class="cta"><a href="./">순위 보러 가기 →</a></div>
+  </main>
+  <footer>
+    <div class="f-links">
+      <a href="./about.html">소개</a>
+      <a href="./privacy.html">개인정보처리방침</a>
+      <a href="./contact.html">문의</a>
+    </div>
+    <div class="f-note">© 2026 AI 리그. 순위·점수는 Arena(arena.ai)의 공개 데이터를 기반으로 하며 참고용입니다.</div>
+  </footer>
+</div>
+</body>
+</html>

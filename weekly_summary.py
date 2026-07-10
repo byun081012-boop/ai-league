@@ -19,8 +19,8 @@ from datetime import date
 RANKINGS_FILE = "rankings.json"
 PREV_FILE     = "previous_ranks.json"
 OUTPUT_FILE   = "summary.md"
-CATEGORIES    = ["overall", "text", "coding", "image"]
-CAT_NAMES     = {"overall": "종합", "text": "텍스트", "coding": "코딩", "image": "이미지"}
+CATEGORIES    = ["overall", "text", "coding", "image", "agent"]
+CAT_NAMES     = {"overall": "종합", "text": "텍스트", "coding": "코딩", "image": "이미지", "agent": "에이전트"}
 
 
 def load_json(path):

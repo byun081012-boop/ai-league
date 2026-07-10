@@ -24,7 +24,7 @@ import os
 from datetime import date
 
 # 웹사이트 탭과 1:1 대응하는 카테고리
-CATEGORIES = ["overall", "text", "coding", "image"]
+CATEGORIES = ["overall", "text", "coding", "image", "agent"]
 
 # ── 각 탭을 Arena의 어느 (arena=subset, category) 에서 가져올지 지정 ──
 #   overall/text 는 스키마·데이터로 '확인됨'.
@@ -35,6 +35,7 @@ CATEGORY_SOURCES = {
     "text":    ("text",               "overall"),   # 확인됨 (원본 텍스트 종합)
     "coding":  ("webdev",             "overall"),    # webdev = Code Arena / 값 확인 권장
     "image":   ("text_to_image",      "overall"),    # 이미지 생성 / 값 확인 권장
+    "agent":   ("agentic",            "overall"),    # 에이전트 / subset 이름 확인 필요
 }
 
 # ── organization → (표시 제조사, 브랜드색). Arena가 채워주는 부분 ──

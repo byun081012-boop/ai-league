@@ -40,25 +40,22 @@
     "claude-opus-4-8-thinking": 2,
     "claude-opus-4-7-thinking": 3,
     "claude-opus-4-7": 4,
-    "claude-sonnet-5-thinking": 5,
-    "claude-opus-4-6-thinking": 6,
-    "claude-opus-4-6": 7,
-    "claude-opus-4-8": 8,
-    "claude-sonnet-4-6": 9,
-    "gemini-3.5-flash": 10,
-    "gemini-3.1-pro-preview": 11,
-    "gemini-3-flash": 12,
-    "claude-haiku-4-5-20251001": 13,
-    "gemini-3.1-flash-lite-preview": 14
+    "claude-opus-4-6-thinking": 5,
+    "claude-opus-4-6": 6,
+    "claude-opus-4-8": 7,
+    "claude-sonnet-4-6": 8,
+    "gemini-3.1-pro-preview": 9,
+    "gemini-3-flash": 10,
+    "claude-haiku-4-5-20251001": 11,
+    "gemini-3.1-flash-lite-preview": 12
   },
   "image": {
     "gpt-image-2 (medium)": 1,
-    "gemini-3.1-flash-image-preview (nano-banana-2) [web-search]": 2,
-    "gemini-3-pro-image-preview (nano-banana-pro)": 3,
-    "flux-2-pro": 4,
-    "gemini-2.5-flash-image-preview (nano-banana)": 5,
-    "seedream-4.5": 6,
-    "seedream-4-2k": 7,
-    "gpt-image-1": 8
+    "gemini-3-pro-image-preview (nano-banana-pro)": 2,
+    "flux-2-pro": 3,
+    "gemini-2.5-flash-image-preview (nano-banana)": 4,
+    "seedream-4.5": 5,
+    "seedream-4-2k": 6,
+    "gpt-image-1": 7
   }
 }

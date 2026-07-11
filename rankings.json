@@ -175,7 +175,7 @@
       },
       "prevRanks": {
         "overall": 6,
-        "text": 7,
+        "text": 6,
         "coding": 9,
         "image": null,
         "agent": null
@@ -205,7 +205,7 @@
       },
       "prevRanks": {
         "overall": 7,
-        "text": 10,
+        "text": 9,
         "coding": 2,
         "image": null,
         "agent": null
@@ -235,7 +235,7 @@
       },
       "prevRanks": {
         "overall": 8,
-        "text": 8,
+        "text": 7,
         "coding": null,
         "image": null,
         "agent": null
@@ -264,8 +264,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 10,
-        "text": 12,
+        "overall": 9,
+        "text": 11,
         "coding": 7,
         "image": null,
         "agent": null
@@ -294,8 +294,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 11,
-        "text": 9,
+        "overall": 10,
+        "text": 8,
         "coding": 10,
         "image": null,
         "agent": null
@@ -324,8 +324,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 12,
-        "text": 14,
+        "overall": 11,
+        "text": 12,
         "coding": null,
         "image": null,
         "agent": null
@@ -354,8 +354,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 13,
-        "text": 11,
+        "overall": 12,
+        "text": 10,
         "coding": 8,
         "image": null,
         "agent": null
@@ -384,8 +384,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 15,
-        "text": 15,
+        "overall": 13,
+        "text": 13,
         "coding": 12,
         "image": null,
         "agent": null
@@ -414,8 +414,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 16,
-        "text": 16,
+        "overall": 14,
+        "text": 14,
         "coding": 11,
         "image": null,
         "agent": null

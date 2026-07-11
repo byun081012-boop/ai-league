@@ -35,7 +35,7 @@ CATEGORY_SOURCES = {
     "text":    ("text",               "overall"),   # 확인됨 (원본 텍스트 종합)
     "coding":  ("webdev",             "overall"),    # webdev = Code Arena / 값 확인 권장
     "image":   ("text_to_image",      "overall"),    # 이미지 생성 / 값 확인 권장
-    "agent":   ("agent",            "overall"),    # 에이전트 / subset 이름 확인 필요
+    "agent":   ("agent",              "overall"),    # 에이전트
 }
 
 # ── organization → (표시 제조사, 브랜드색). Arena가 채워주는 부분 ──
@@ -84,17 +84,28 @@ def fetch_raw_scores():
     from datasets import load_dataset   # 무거우니 함수 안에서 import
     scores, orgs, aranks = {}, {}, {}
     for cat, (subset, category_value) in CATEGORY_SOURCES.items():
-        ds = load_dataset(
-            DATASET, subset, split="latest",
-            streaming=True,
-        )
-        rows = [dict(model_name=r["model_name"],
-                     organization=r.get("organization", ""),
-                     rating=r["rating"],
-                     rank=r.get("rank"))
-                for r in ds if r.get("category") == category_value]
-        rows_to_scores_orgs(rows, cat, scores, orgs, aranks)
-        print(f"  · {cat:<7} ← {subset}/{category_value}: {len(rows)}개 모델")
+        try:
+            ds = load_dataset(
+                DATASET, subset, split="latest",
+                streaming=True,
+            )
+            rows = []
+            for r in ds:
+                if r.get("category") != category_value:
+                    continue
+                rating = r.get("rating") or r.get("score")
+                if rating is None:
+                    continue
+                rows.append(dict(
+                    model_name=r["model_name"],
+                    organization=r.get("organization", ""),
+                    rating=rating,
+                    rank=r.get("rank"),
+                ))
+            rows_to_scores_orgs(rows, cat, scores, orgs, aranks)
+            print(f"  · {cat:<7} ← {subset}/{category_value}: {len(rows)}개 모델")
+        except Exception as e:
+            print(f"  ⚠ {cat:<7} ← {subset}/{category_value}: 로드 실패 ({e})")
     return scores, orgs, aranks
 
 

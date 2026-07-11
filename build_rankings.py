@@ -35,7 +35,7 @@ CATEGORY_SOURCES = {
     "text":    ("text",               "overall"),   # 확인됨 (원본 텍스트 종합)
     "coding":  ("webdev",             "overall"),    # webdev = Code Arena / 값 확인 권장
     "image":   ("text_to_image",      "overall"),    # 이미지 생성 / 값 확인 권장
-    "agent":   ("agentic",            "overall"),    # 에이전트 / subset 이름 확인 필요
+    "agent":   ("agent",            "overall"),    # 에이전트 / subset 이름 확인 필요
 }
 
 # ── organization → (표시 제조사, 브랜드색). Arena가 채워주는 부분 ──

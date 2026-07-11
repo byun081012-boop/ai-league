@@ -8,14 +8,12 @@
     "gemini-3.1-pro-preview": 6,
     "claude-opus-4-8-thinking": 7,
     "gpt-5.5-high": 8,
-    "gemini-3.5-flash": 9,
-    "claude-opus-4-8": 10,
-    "gemini-3-flash": 11,
-    "gpt-5.5-instant": 12,
-    "claude-sonnet-4-6": 13,
-    "claude-sonnet-5-thinking": 14,
-    "gemini-3.1-flash-lite-preview": 15,
-    "claude-haiku-4-5-20251001": 16
+    "claude-opus-4-8": 9,
+    "gemini-3-flash": 10,
+    "gpt-5.5-instant": 11,
+    "claude-sonnet-4-6": 12,
+    "gemini-3.1-flash-lite-preview": 13,
+    "claude-haiku-4-5-20251001": 14
   },
   "text": {
     "claude-opus-4-6-thinking": 1,
@@ -23,17 +21,15 @@
     "claude-fable-5": 3,
     "claude-opus-4-7-thinking": 4,
     "claude-opus-4-7": 5,
-    "gemini-3.5-flash": 6,
-    "gemini-3.1-pro-preview": 7,
-    "gpt-5.5-high": 8,
-    "gemini-3-flash": 9,
-    "claude-opus-4-8-thinking": 10,
-    "claude-sonnet-4-6": 11,
-    "claude-opus-4-8": 12,
-    "claude-sonnet-5-thinking": 13,
-    "gpt-5.5-instant": 14,
-    "gemini-3.1-flash-lite-preview": 15,
-    "claude-haiku-4-5-20251001": 16
+    "gemini-3.1-pro-preview": 6,
+    "gpt-5.5-high": 7,
+    "gemini-3-flash": 8,
+    "claude-opus-4-8-thinking": 9,
+    "claude-sonnet-4-6": 10,
+    "claude-opus-4-8": 11,
+    "gpt-5.5-instant": 12,
+    "gemini-3.1-flash-lite-preview": 13,
+    "claude-haiku-4-5-20251001": 14
   },
   "coding": {
     "claude-fable-5": 1,
@@ -57,5 +53,6 @@
     "seedream-4.5": 5,
     "seedream-4-2k": 6,
     "gpt-image-1": 7
-  }
+  },
+  "agent": {}
 }

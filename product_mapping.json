@@ -1,6 +1,6 @@
 {
   "_설명": "네가 손으로 관리하는 표. Arena가 모르는 것만 채운다.",
-  "_주의": "키(model_name)는 Arena 실제 데이터의 이름과 '정확히' 일치해야 합쳐진다.",
+  "_주의": "키(model_name)는 Arena 실제 데이터의 이름과 '정확히' 일치해야 합쳐진다. 에이전트 탭은 이름 형식이 달라도 자동 정규화로 매칭됨.",
 
   "claude-opus-4-8":            {"name":"Claude Opus 4.8","product":"Claude","free":false,"access":"유료 · Pro"},
   "claude-opus-4-8-thinking":   {"name":"Claude Opus 4.8 사고","product":"Claude","free":false,"access":"유료 · Pro · 확장 사고"},
@@ -9,7 +9,7 @@
   "claude-opus-4-6":            {"name":"Claude Opus 4.6","product":"Claude","free":false,"access":"유료 · Pro"},
   "claude-opus-4-6-thinking":   {"name":"Claude Opus 4.6 사고","product":"Claude","free":false,"access":"유료 · Pro · 확장 사고"},
   "claude-fable-5":             {"name":"Claude Fable 5","product":"Claude","free":false,"access":"유료 · 주간한도의 최대 50%까지 사용"},
-  "claude-sonnet-5-thinking":   {"name":"Claude Sonnet 5 사고","product":"Claude","free":true,"access":"무료 · 확장 사고"},
+  "claude-sonnet-5-high":       {"name":"Claude Sonnet 5","product":"Claude","free":true,"access":"무료"},
   "claude-sonnet-4-6":          {"name":"Claude Sonnet 4.6","product":"Claude","free":true,"access":"무료"},
   "claude-haiku-4-5-20251001":  {"name":"Claude Haiku 4.5","product":"Claude","free":true,"access":"무료"},
 
@@ -18,12 +18,12 @@
 
   "gemini-3.1-flash-lite-preview": {"name":"Gemini 3.1 Flash-Lite","product":"Gemini","free":true,"access":"무료 · 기본 탑재, 넉넉한 사용량"},
   "gemini-3.1-pro-preview":        {"name":"Gemini 3.1 Pro","product":"Gemini","free":true,"access":"무료 · 사용량 매우 제한적"},
-  "gemini-3.5-flash":              {"name":"Gemini 3.5 Flash","product":"Gemini","free":true,"access":"무료 · 유료 대비 사용량 제한"},
+  "gemini-3.5-flash-high":         {"name":"Gemini 3.5 Flash","product":"Gemini","free":true,"access":"무료 · 유료 대비 사용량 제한"},
   "gemini-3-flash":                {"name":"Gemini 3 Flash","product":"Gemini","free":true,"access":"무료"},
 
-  "gemini-3.1-flash-image-preview (nano-banana-2) [web-search]": {"name":"Nano Banana 2","product":"Gemini","free":true,"access":"무료 · 일일 생성 제한"},
-  "gemini-3-pro-image-preview (nano-banana-pro)":                {"name":"Nano Banana Pro","product":"Gemini","free":true,"access":"무료 · 일일 생성 제한"},
-  "gemini-2.5-flash-image-preview (nano-banana)":                {"name":"Nano Banana","product":"Gemini","free":true,"access":"무료 · 일일 생성 제한"},
+  "gemini-3.1-flash-image (nano-banana-2) [web-search]": {"name":"Nano Banana 2","product":"Gemini","free":true,"access":"무료 · 일일 생성 제한"},
+  "gemini-3-pro-image-2k (nano-banana-pro)":             {"name":"Nano Banana Pro","product":"Gemini","free":true,"access":"무료 · 일일 생성 제한"},
+  "gemini-2.5-flash-image-preview (nano-banana)":        {"name":"Nano Banana","product":"Gemini","free":true,"access":"무료 · 일일 생성 제한"},
   "gpt-image-2 (medium)":       {"name":"GPT Image 2","product":"ChatGPT","free":false,"access":"유료 · Plus 이상"},
   "gpt-image-1":                {"name":"GPT Image 1","product":"ChatGPT","free":false,"access":"유료 · Plus 이상"},
   "seedream-4.5":               {"name":"Seedream 4.5","product":"Dreamina","free":true,"access":"무료 · 크레딧제"},

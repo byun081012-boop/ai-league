@@ -2,9 +2,15 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<meta name="description" content="생성형 AI 모델 실시간 순위 비교 사이트. ChatGPT, Claude, Gemini 등 주요 인공지능 모델을 무료·유료·분야별로 정리하고 매일 자동 갱신합니다. AI 성능 벤치마크 기반 랭킹.">
+<meta name="keywords" content="AI 순위, AI 비교, AI 랭킹, 생성형 AI, 생성형 인공지능 순위, 생성형 인공지능 비교, AI 모델 비교, AI 성능 비교, AI 벤치마크, 인공지능 순위, 인공지능 비교, 인공지능 추세, AI 추세, 무료 AI 추천, 무료 AI 순위, 최고의 AI, ChatGPT 순위, Claude 순위, Gemini 순위, ChatGPT vs Claude, AI ranking, generative AI ranking, best free AI, AI model comparison, LLM ranking">
+<meta property="og:title" content="생성형 AI 실시간 순위 - Generative AI Ranking">
+<meta property="og:description" content="ChatGPT, Claude, Gemini 등 AI 모델을 무료·유료·분야별로 비교. 매일 자동 갱신되는 실시간 AI 랭킹.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://generative-ai-ranking.com">
+<meta property="og:locale" content="ko_KR">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8144219807150325"
      crossorigin="anonymous"></script>
-<meta name="naver-site-verification" content="04697be2d0ae2fe575f88b7123bbd5af09e5a5bc" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>생성형 AI(인공지능) 실시간 순위 - Generative AI Ranking</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard-dynamic-subset.min.css">
@@ -182,17 +188,21 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
   html{scroll-behavior:auto}
 }
 
-/* ---------- 상단 안내 배너 ("순위란?") ---------- */
+/* ---------- 하단 고정 독: 안내 배너 + 스크롤 버튼 ---------- */
+.bottom-dock{
+  position:fixed;left:50%;bottom:16px;transform:translateX(-50%);
+  z-index:55;width:calc(100% - 24px);max-width:760px;
+  display:flex;align-items:stretch;justify-content:center;gap:10px;flex-wrap:wrap;
+}
 .explain-banner{
-  position:fixed;top:14px;left:50%;transform:translateX(-50%);
-  z-index:60;max-width:520px;width:calc(100% - 28px);
+  flex:1;min-width:250px;max-width:520px;
   display:flex;align-items:center;gap:12px;
   background:linear-gradient(135deg,#122C32,#081619);
   border:1px solid #2A4A50;border-radius:14px;padding:11px 12px 11px 16px;
   box-shadow:0 12px 34px rgba(0,0,0,.5);
   animation:banner-in .5s cubic-bezier(.2,.8,.2,1) both;
 }
-@keyframes banner-in{from{opacity:0;transform:translateX(-50%) translateY(-12px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes banner-in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .explain-banner.hide{display:none}
 .explain-banner .eb-q{width:22px;height:22px;flex:none;border-radius:50%;background:linear-gradient(120deg,var(--live),var(--gold));color:#04211D;font-weight:900;font-size:13px;display:flex;align-items:center;justify-content:center}
 .explain-banner a.eb-link{flex:1;min-width:0;text-decoration:none;color:var(--text)}
@@ -205,8 +215,8 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 
 /* ---------- 하단 플로팅 버튼 (아래로 스크롤) ---------- */
 .to-analysis{
-  position:fixed;left:50%;bottom:20px;transform:translateX(-50%);
-  z-index:55;display:inline-flex;align-items:center;gap:8px;
+  flex:none;align-self:center;
+  display:inline-flex;align-items:center;gap:8px;
   background:linear-gradient(135deg,#122C32,#081619);
   border:1px solid var(--gold);border-radius:99px;
   padding:11px 20px;color:var(--text);font-family:inherit;font-weight:800;font-size:14px;
@@ -215,9 +225,9 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 }
 .to-analysis .arw{color:var(--gold);font-size:15px;animation:bob 1.8s ease-in-out infinite}
 @keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
-.to-analysis:hover{transform:translateX(-50%) translateY(-2px)}
+.to-analysis:hover{transform:translateY(-2px)}
 .to-analysis:focus-visible{outline:2px solid var(--live);outline-offset:2px}
-.to-analysis.hide{opacity:0;pointer-events:none;transform:translateX(-50%) translateY(10px)}
+.to-analysis.hide{opacity:0;pointer-events:none;transform:translateY(10px)}
 @media (prefers-reduced-motion:reduce){.to-analysis .arw{animation:none}}
 
 /* 주간분석 강화 */
@@ -227,16 +237,6 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
-
-<!-- 상단 고정 안내 배너: Arena 순위가 왜 다른지 궁금한 사람을 설명 페이지로 유도 -->
-<div class="explain-banner" id="explainBanner" role="note">
-  <span class="eb-q" aria-hidden="true">?</span>
-  <a class="eb-link" href="./explainer.html">
-    <div class="eb-t">'Arena 순위'가 우리 순위와 다른 이유 <span class="eb-go">보기 →</span></div>
-    <div class="eb-s">우리는 실제로 쓸 수 있는 모델만 골라 순위를 매겨요</div>
-  </a>
-  <button class="eb-close" id="ebClose" aria-label="안내 닫기">✕</button>
-</div>
 
 <div class="wrap">
 
@@ -316,10 +316,20 @@ footer{margin-top:30px;padding:22px 0 40px;border-top:1px solid var(--line)}
 
 </div>
 
-<!-- 하단 플로팅 버튼: 이번 주 분석으로 스크롤 -->
-<button class="to-analysis" id="toAnalysis" type="button">
-  이번 주 분석 <span class="arw" aria-hidden="true">↓</span>
-</button>
+<!-- 하단 고정 독: 안내 배너 + 이번 주 분석 버튼 -->
+<div class="bottom-dock">
+  <div class="explain-banner" id="explainBanner" role="note">
+    <span class="eb-q" aria-hidden="true">?</span>
+    <a class="eb-link" href="./explainer.html">
+      <div class="eb-t">'Arena 순위'가 우리 순위와 다른 이유 <span class="eb-go">보기 →</span></div>
+      <div class="eb-s">우리는 실제로 쓸 수 있는 모델만 골라 순위를 매겨요</div>
+    </a>
+    <button class="eb-close" id="ebClose" aria-label="안내 닫기">✕</button>
+  </div>
+  <button class="to-analysis" id="toAnalysis" type="button">
+    이번 주 분석 <span class="arw" aria-hidden="true">↓</span>
+  </button>
+</div>
 
 <script>
 /* ============================================================

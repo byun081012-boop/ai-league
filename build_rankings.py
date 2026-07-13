@@ -137,19 +137,45 @@ def save_current_ranks(ranks_by_cat):
         json.dump(ranks_by_cat, f, ensure_ascii=False, indent=2)
 
 
+def normalize_model_name(name):
+    """모델 이름을 정규화해서 매칭 확률을 높인다.
+    예: 'Claude Opus 4.8' → 'claude-opus-4-8'
+        'claude-opus-4-8' → 'claude-opus-4-8' (이미 정규화됨)
+        'Claude Opus 4.7 (Thinking)' → 'claude-opus-4-7-thinking'
+    """
+    import re
+    n = name.lower().strip()
+    n = re.sub(r'\s*\(([^)]*)\)', r'-\1', n)   # " (Thinking)" → "-thinking"
+    n = re.sub(r'\s*\[[^\]]*\]', '', n)         # " [web-search]" → 제거
+    n = n.replace(" ", "-")
+    n = n.replace(".", "-")
+    n = n.strip("-")
+    return n
+
+
 # ════════════════════════════════════════════════════════════
 # 3) 합치기 + 순위/변동 계산 (순수 함수)
 #    입력: 점수, 조직, 매핑, 어제순위 → 출력: 결과JSON 등
 # ════════════════════════════════════════════════════════════
 def assemble(scores, orgs, aranks, mapping, prev):
+    # 정규화된 매핑 키 → 원래 매핑 키 역방향 조회 테이블
+    norm_to_key = {normalize_model_name(k): k for k in mapping if not k.startswith("_")}
+
     merged, missing = {}, []
     for model, cat_scores in scores.items():
-        if model not in mapping:
-            missing.append(model)          # 점수는 있는데 매핑 없음 = 추가 필요
+        # 1차: 정확한 이름으로 매칭
+        key = model if model in mapping else None
+        # 2차: 정규화해서 매칭 (에이전트 탭 등 이름 형식이 다른 경우)
+        if key is None:
+            norm = normalize_model_name(model)
+            if norm in norm_to_key:
+                key = norm_to_key[norm]
+        if key is None:
+            missing.append(model)
             continue
         provider, color = PROVIDER_META.get(orgs.get(model, ""),
                                              (orgs.get(model, "").title() or "기타", DEFAULT_COLOR))
-        info = mapping[model]
+        info = mapping[key]
         merged[model] = {
             "id": model,
             "name": info.get("name", model),

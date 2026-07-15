@@ -481,7 +481,16 @@ function buildControls(){
 function compute(){
   const ranked = DATA.models
     .filter(m => m.scores[cat] != null)
-    .sort((a,b) => b.scores[cat] - a.scores[cat])
+    .sort((a,b) => {
+      // Arena가 매긴 순위(rank)가 양쪽 다 있으면 그 순서를 그대로 따른다
+      // (에이전트처럼 Elo가 아닌 지표로 정렬되는 보드도 Arena와 일치하게)
+      const ra = a.arenaRanks ? a.arenaRanks[cat] : null;
+      const rb = b.arenaRanks ? b.arenaRanks[cat] : null;
+      if (ra != null && rb != null) return ra - rb;
+      if (ra != null) return -1;
+      if (rb != null) return 1;
+      return b.scores[cat] - a.scores[cat];   // 둘 다 없으면 점수순
+    })
     .map((m,i) => {
       const prev = m.prevRanks[cat];
       const globalRank = i + 1;
@@ -531,6 +540,7 @@ function render(){
 
   const tierWord = tier === "free" ? "무료 " : tier === "paid" ? "유료 " : "";
   const catWord  = CATS.find(c => c[0] === cat)[1];
+  const scoreLabel = cat === "agent" ? "SCORE" : "ELO";  // 에이전트는 Elo가 아닌 지표
 
   /* 1위: 챔피언 카드 */
   const c = list[0];
@@ -545,7 +555,7 @@ function render(){
         </div>
         <div class="score-wrap">
           <div class="score">${c.scores[cat]}</div>
-          <div class="score-label">ELO</div>
+          <div class="score-label">${scoreLabel}</div>
         </div>
       </div>
     </div>`;
@@ -562,7 +572,7 @@ function render(){
         </div>
         <div class="score-wrap">
           <div class="score">${m.scores[cat]}</div>
-          <div class="score-label">ELO</div>
+          <div class="score-label">${scoreLabel}</div>
         </div>
       </div>`;
   });
@@ -578,7 +588,7 @@ function render(){
       </div>
       <div class="score-wrap">
         <div class="score">${m.scores[cat]}</div>
-        <div class="score-label">ELO</div>
+        <div class="score-label">${scoreLabel}</div>
       </div>
     </div>`).join("");
 

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17",
+  "lastUpdated": "2026-07-18",
   "models": [
     {
       "id": "claude-fable-5",
@@ -55,8 +55,8 @@
       },
       "prevRanks": {
         "overall": 2,
-        "text": 4,
-        "coding": 6,
+        "text": 1,
+        "coding": 5,
         "image": null,
         "agent": null
       }
@@ -85,7 +85,7 @@
       },
       "prevRanks": {
         "overall": 3,
-        "text": 13,
+        "text": 4,
         "coding": 3,
         "image": null,
         "agent": null
@@ -115,7 +115,7 @@
       },
       "prevRanks": {
         "overall": 4,
-        "text": 6,
+        "text": 2,
         "coding": 7,
         "image": null,
         "agent": null
@@ -145,7 +145,7 @@
       },
       "prevRanks": {
         "overall": 5,
-        "text": 11,
+        "text": 5,
         "coding": 4,
         "image": null,
         "agent": null
@@ -175,7 +175,7 @@
       },
       "prevRanks": {
         "overall": 6,
-        "text": 9,
+        "text": 7,
         "coding": 10,
         "image": null,
         "agent": null
@@ -205,7 +205,7 @@
       },
       "prevRanks": {
         "overall": 7,
-        "text": 2,
+        "text": 10,
         "coding": 2,
         "image": null,
         "agent": null
@@ -235,7 +235,7 @@
       },
       "prevRanks": {
         "overall": 8,
-        "text": 1,
+        "text": 8,
         "coding": null,
         "image": null,
         "agent": null
@@ -265,7 +265,7 @@
       },
       "prevRanks": {
         "overall": 9,
-        "text": 12,
+        "text": 6,
         "coding": null,
         "image": null,
         "agent": null
@@ -295,7 +295,7 @@
       },
       "prevRanks": {
         "overall": 10,
-        "text": 5,
+        "text": 12,
         "coding": 8,
         "image": null,
         "agent": null
@@ -325,7 +325,7 @@
       },
       "prevRanks": {
         "overall": 11,
-        "text": 7,
+        "text": 9,
         "coding": 11,
         "image": null,
         "agent": null
@@ -385,7 +385,7 @@
       },
       "prevRanks": {
         "overall": 13,
-        "text": 8,
+        "text": 11,
         "coding": 9,
         "image": null,
         "agent": null
@@ -415,8 +415,8 @@
       },
       "prevRanks": {
         "overall": 14,
-        "text": 10,
-        "coding": 5,
+        "text": 13,
+        "coding": 6,
         "image": null,
         "agent": null
       }

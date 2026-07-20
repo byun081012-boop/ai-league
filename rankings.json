@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-18",
+  "lastUpdated": "2026-07-20",
   "models": [
     {
       "id": "claude-fable-5",
@@ -147,6 +147,36 @@
         "overall": 5,
         "text": 5,
         "coding": 4,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "gpt-5.6-sol-xhigh",
+      "name": "GPT-5.6 sol",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGpt",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": 1486,
+        "text": 1457,
+        "coding": null,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": 8,
+        "text": 26.0,
+        "coding": null,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -718,6 +748,36 @@
         "text": null,
         "coding": null,
         "image": 8,
+        "agent": null
+      }
+    },
+    {
+      "id": "GPT 5.6 Sol (xHigh)",
+      "name": "GPT-5.6 sol",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGpt",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 2
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
         "agent": null
       }
     },

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-23",
+  "lastUpdated": "2026-07-24",
   "models": [
     {
       "id": "claude-fable-5",
@@ -25,7 +25,7 @@
       },
       "prevRanks": {
         "overall": 1,
-        "text": 3,
+        "text": 4,
         "coding": 1,
         "image": null,
         "agent": null
@@ -115,7 +115,7 @@
       },
       "prevRanks": {
         "overall": 4,
-        "text": 7,
+        "text": 8,
         "coding": 7,
         "image": null,
         "agent": null
@@ -145,7 +145,7 @@
       },
       "prevRanks": {
         "overall": 5,
-        "text": 11,
+        "text": 12,
         "coding": 4,
         "image": null,
         "agent": null
@@ -174,8 +174,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 7,
-        "text": 10,
+        "overall": 6,
+        "text": 11,
         "coding": 10,
         "image": null,
         "agent": null
@@ -204,8 +204,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 6,
-        "text": 4,
+        "overall": 7,
+        "text": 3,
         "coding": null,
         "image": null,
         "agent": null
@@ -295,7 +295,7 @@
       },
       "prevRanks": {
         "overall": 10,
-        "text": 12,
+        "text": 13,
         "coding": null,
         "image": null,
         "agent": null
@@ -415,7 +415,7 @@
       },
       "prevRanks": {
         "overall": 14,
-        "text": 8,
+        "text": 10,
         "coding": 9,
         "image": null,
         "agent": null
@@ -445,7 +445,7 @@
       },
       "prevRanks": {
         "overall": 15,
-        "text": 13,
+        "text": 7,
         "coding": 5,
         "image": null,
         "agent": null
@@ -778,7 +778,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 2
+        "agent": 1
       }
     },
     {
@@ -808,7 +808,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 1
+        "agent": 2
       }
     },
     {

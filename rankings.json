@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-24",
+  "lastUpdated": "2026-07-25",
   "models": [
     {
       "id": "claude-fable-5",
@@ -12,7 +12,7 @@
       "scores": {
         "overall": 1507,
         "text": 1455,
-        "coding": 1634,
+        "coding": 1630,
         "image": null,
         "agent": null
       },
@@ -42,14 +42,14 @@
       "scores": {
         "overall": 1505,
         "text": 1454,
-        "coding": 1542,
+        "coding": 1546,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 2,
         "text": 35.0,
-        "coding": 10,
+        "coding": 9,
         "image": null,
         "agent": null
       },
@@ -72,14 +72,14 @@
       "scores": {
         "overall": 1502,
         "text": 1440,
-        "coding": 1559,
+        "coding": 1558,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 3,
         "text": 73.0,
-        "coding": 6,
+        "coding": 7,
         "image": null,
         "agent": null
       },
@@ -102,14 +102,14 @@
       "scores": {
         "overall": 1498,
         "text": 1449,
-        "coding": 1536,
+        "coding": 1537,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 4,
         "text": 43.0,
-        "coding": 13,
+        "coding": 12,
         "image": null,
         "agent": null
       },
@@ -132,14 +132,14 @@
       "scores": {
         "overall": 1494,
         "text": 1442,
-        "coding": 1556,
+        "coding": 1559,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 6,
         "text": 63.0,
-        "coding": 8,
+        "coding": 6,
         "image": null,
         "agent": null
       },
@@ -162,7 +162,7 @@
       "scores": {
         "overall": 1486,
         "text": 1445,
-        "coding": 1444,
+        "coding": 1446,
         "image": null,
         "agent": null
       },
@@ -222,7 +222,7 @@
       "scores": {
         "overall": 1484,
         "text": 1463,
-        "coding": 1565,
+        "coding": 1568,
         "image": null,
         "agent": null
       },
@@ -312,14 +312,14 @@
       "scores": {
         "overall": 1473,
         "text": 1452,
-        "coding": 1534,
+        "coding": 1539,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 22,
         "text": 33.0,
-        "coding": 14,
+        "coding": 11,
         "image": null,
         "agent": null
       },
@@ -372,14 +372,14 @@
       "scores": {
         "overall": 1473,
         "text": 1447,
-        "coding": 1437,
+        "coding": 1438,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 25,
         "text": 48.0,
-        "coding": 39,
+        "coding": 38,
         "image": null,
         "agent": null
       },
@@ -409,7 +409,7 @@
       "arenaRanks": {
         "overall": 27,
         "text": 49.0,
-        "coding": 18,
+        "coding": 16,
         "image": null,
         "agent": null
       },
@@ -432,14 +432,14 @@
       "scores": {
         "overall": 1461,
         "text": 1451,
-        "coding": 1544,
+        "coding": 1541,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 38,
         "text": 51.0,
-        "coding": 9,
+        "coding": 10,
         "image": null,
         "agent": null
       },
@@ -462,14 +462,14 @@
       "scores": {
         "overall": 1432,
         "text": 1415,
-        "coding": 1253,
+        "coding": 1256,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 81,
         "text": 104.0,
-        "coding": 86,
+        "coding": 85,
         "image": null,
         "agent": null
       },
@@ -492,14 +492,14 @@
       "scores": {
         "overall": 1412,
         "text": 1393,
-        "coding": 1327,
+        "coding": 1324,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 115,
         "text": 133.0,
-        "coding": 78,
+        "coding": 76,
         "image": null,
         "agent": null
       },

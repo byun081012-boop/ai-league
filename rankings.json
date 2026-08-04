@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-03",
+  "lastUpdated": "2026-08-04",
   "models": [
     {
       "id": "claude-fable-5",
@@ -197,14 +197,14 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 14,
-        "text": 26.0,
+        "overall": 13,
+        "text": 25.0,
         "coding": 9,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 8,
+        "overall": 7,
         "text": 10,
         "coding": 2,
         "image": null,
@@ -227,14 +227,14 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 15,
-        "text": 32.0,
+        "overall": 14,
+        "text": 31.0,
         "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 7,
+        "overall": 8,
         "text": 12,
         "coding": null,
         "image": null,
@@ -257,8 +257,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 17,
-        "text": 19.0,
+        "overall": 16,
+        "text": 18.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -280,15 +280,15 @@
       "free": true,
       "access": "무료 · 유료 대비 사용량 제한",
       "scores": {
-        "overall": 1476,
-        "text": 1480,
+        "overall": 1475,
+        "text": 1479,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 19,
-        "text": 9.0,
+        "overall": 20,
+        "text": 10.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -317,8 +317,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 23,
-        "text": 33.0,
+        "overall": 22,
+        "text": 32.0,
         "coding": 15,
         "image": null,
         "agent": null
@@ -347,8 +347,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 26,
-        "text": 96.0,
+        "overall": 25,
+        "text": 95.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -377,8 +377,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 27,
-        "text": 22.0,
+        "overall": 26,
+        "text": 21.0,
         "coding": 45,
         "image": null,
         "agent": null
@@ -407,8 +407,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 30,
-        "text": 30.0,
+        "overall": 29,
+        "text": 29.0,
         "coding": 21,
         "image": null,
         "agent": null
@@ -437,8 +437,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 42,
-        "text": 51.0,
+        "overall": 41,
+        "text": 50.0,
         "coding": 14,
         "image": null,
         "agent": null
@@ -467,8 +467,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 87,
-        "text": 110.0,
+        "overall": 86,
+        "text": 109.0,
         "coding": 93,
         "image": null,
         "agent": null
@@ -497,8 +497,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 121,
-        "text": 139.0,
+        "overall": 120,
+        "text": 138.0,
         "coding": 84,
         "image": null,
         "agent": null
@@ -771,7 +771,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 4
+        "agent": 5
       },
       "prevRanks": {
         "overall": null,
@@ -812,36 +812,6 @@
       }
     },
     {
-      "id": "Claude Sonnet 5 (High)",
-      "name": "Claude Sonnet 5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 7
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 3
-      }
-    },
-    {
       "id": "Claude Opus 4.7 (Thinking)",
       "name": "Claude Opus 4.7 사고",
       "provider": "Anthropic",
@@ -861,7 +831,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 9
+        "agent": 8
       },
       "prevRanks": {
         "overall": null,
@@ -891,7 +861,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 10
+        "agent": 9
       },
       "prevRanks": {
         "overall": null,
@@ -899,6 +869,36 @@
         "coding": null,
         "image": null,
         "agent": 5
+      }
+    },
+    {
+      "id": "Claude Sonnet 5 (High)",
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 10
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 3
       }
     },
     {
@@ -1041,7 +1041,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 24
+        "agent": 26
       },
       "prevRanks": {
         "overall": null,
@@ -1101,7 +1101,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 39
+        "agent": 40
       },
       "prevRanks": {
         "overall": null,

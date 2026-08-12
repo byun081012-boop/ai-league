@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-11",
+  "lastUpdated": "2026-08-12",
   "models": [
     {
       "id": "claude-fable-5",
@@ -42,7 +42,7 @@
       "scores": {
         "overall": 1505,
         "text": 1503,
-        "coding": 1545,
+        "coding": 1546,
         "image": null,
         "agent": null
       },
@@ -86,7 +86,7 @@
       "prevRanks": {
         "overall": 3,
         "text": 4,
-        "coding": 4,
+        "coding": 3,
         "image": null,
         "agent": null
       }
@@ -102,14 +102,14 @@
       "scores": {
         "overall": 1498,
         "text": 1497,
-        "coding": 1538,
+        "coding": 1537,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 5,
         "text": 4.0,
-        "coding": 16,
+        "coding": 17,
         "image": null,
         "agent": null
       },
@@ -137,7 +137,7 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 6,
+        "overall": 7,
         "text": 9.0,
         "coding": 11,
         "image": null,
@@ -146,7 +146,7 @@
       "prevRanks": {
         "overall": 5,
         "text": 5,
-        "coding": 3,
+        "coding": 4,
         "image": null,
         "agent": null
       }
@@ -161,7 +161,7 @@
       "access": "무료 · 사용량 매우 제한적",
       "scores": {
         "overall": 1486,
-        "text": 1479,
+        "text": 1480,
         "coding": 1447,
         "image": null,
         "agent": null
@@ -175,38 +175,8 @@
       },
       "prevRanks": {
         "overall": 6,
-        "text": 6,
+        "text": 7,
         "coding": 11,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-opus-4-8-thinking",
-      "name": "Claude Opus 4.8 사고",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro · 확장 사고",
-      "scores": {
-        "overall": 1482,
-        "text": 1462,
-        "coding": 1564,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 16,
-        "text": 28.0,
-        "coding": 9,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 7,
-        "text": 10,
-        "coding": 2,
         "image": null,
         "agent": null
       }
@@ -220,14 +190,14 @@
       "free": false,
       "access": "유료 · Plus 이상",
       "scores": {
-        "overall": 1481,
+        "overall": 1482,
         "text": 1470,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 17,
+        "overall": 16,
         "text": 20.0,
         "coding": null,
         "image": null,
@@ -237,6 +207,36 @@
         "overall": 8,
         "text": 8,
         "coding": null,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "claude-opus-4-8-thinking",
+      "name": "Claude Opus 4.8 사고",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro · 확장 사고",
+      "scores": {
+        "overall": 1481,
+        "text": 1460,
+        "coding": 1564,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": 17,
+        "text": 28.0,
+        "coding": 9,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": 7,
+        "text": 10,
+        "coding": 2,
         "image": null,
         "agent": null
       }
@@ -295,7 +295,7 @@
       },
       "prevRanks": {
         "overall": 10,
-        "text": 7,
+        "text": 6,
         "coding": 10,
         "image": null,
         "agent": null
@@ -311,7 +311,7 @@
       "access": "무료 · 제한적 이용",
       "scores": {
         "overall": 1473,
-        "text": 1419,
+        "text": 1420,
         "coding": null,
         "image": null,
         "agent": null
@@ -348,13 +348,13 @@
       },
       "arenaRanks": {
         "overall": 27,
-        "text": 35.0,
+        "text": 34.0,
         "coding": 15,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 13,
+        "overall": 12,
         "text": 13,
         "coding": 7,
         "image": null,
@@ -379,12 +379,12 @@
       "arenaRanks": {
         "overall": 28,
         "text": 24.0,
-        "coding": 46,
+        "coding": 47,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 12,
+        "overall": 13,
         "text": 9,
         "coding": 12,
         "image": null,
@@ -401,7 +401,7 @@
       "access": "무료",
       "scores": {
         "overall": 1472,
-        "text": 1458,
+        "text": 1457,
         "coding": 1524,
         "image": null,
         "agent": null
@@ -469,7 +469,7 @@
       "arenaRanks": {
         "overall": 88,
         "text": 111.0,
-        "coding": 97,
+        "coding": 98,
         "image": null,
         "agent": null
       },
@@ -499,7 +499,7 @@
       "arenaRanks": {
         "overall": 124,
         "text": 139.0,
-        "coding": 87,
+        "coding": 88,
         "image": null,
         "agent": null
       },
@@ -842,13 +842,13 @@
       }
     },
     {
-      "id": "Claude Sonnet 5 (High)",
-      "name": "Claude Sonnet 5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
+      "id": "GPT 5.5 (High)",
+      "name": "GPT-5.5 Thinking",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": false,
+      "access": "유료 · Plus 이상",
       "scores": {
         "overall": null,
         "text": null,
@@ -868,7 +868,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 4
+        "agent": 6
       }
     },
     {
@@ -902,13 +902,13 @@
       }
     },
     {
-      "id": "GPT 5.5 (High)",
-      "name": "GPT-5.5 Thinking",
-      "provider": "OpenAI",
-      "color": "#10A37F",
-      "product": "ChatGPT",
-      "free": false,
-      "access": "유료 · Plus 이상",
+      "id": "Claude Sonnet 5 (High)",
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
       "scores": {
         "overall": null,
         "text": null,
@@ -928,7 +928,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 6
+        "agent": 4
       }
     },
     {
@@ -951,7 +951,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 13
+        "agent": 12
       },
       "prevRanks": {
         "overall": null,
@@ -959,36 +959,6 @@
         "coding": null,
         "image": null,
         "agent": 7
-      }
-    },
-    {
-      "id": "Claude Opus 4.8",
-      "name": "Claude Opus 4.8",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 19
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 8
       }
     },
     {
@@ -1022,6 +992,66 @@
       }
     },
     {
+      "id": "Claude Opus 4.8",
+      "name": "Claude Opus 4.8",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 21
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 8
+      }
+    },
+    {
+      "id": "Gemini 3.5 Flash (High)",
+      "name": "Gemini 3.5 Flash",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 유료 대비 사용량 제한",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 27
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 11
+      }
+    },
+    {
       "id": "Gemini 3.1 Pro Preview",
       "name": "Gemini 3.1 Pro",
       "provider": "Google",
@@ -1052,36 +1082,6 @@
       }
     },
     {
-      "id": "Gemini 3.5 Flash (High)",
-      "name": "Gemini 3.5 Flash",
-      "provider": "Google",
-      "color": "#4DA3FF",
-      "product": "Gemini",
-      "free": true,
-      "access": "무료 · 유료 대비 사용량 제한",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 29
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 11
-      }
-    },
-    {
       "id": "Gemini 3 Flash",
       "name": "Gemini 3 Flash",
       "provider": "Google",
@@ -1101,7 +1101,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 41
+        "agent": 40
       },
       "prevRanks": {
         "overall": null,

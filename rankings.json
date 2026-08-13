@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12",
+  "lastUpdated": "2026-08-13",
   "models": [
     {
       "id": "claude-fable-5",
@@ -10,9 +10,9 @@
       "free": false,
       "access": "유료 · 주간한도의 최대 50%까지 사용",
       "scores": {
-        "overall": 1506,
+        "overall": 1507,
         "text": 1493,
-        "coding": 1628,
+        "coding": 1627,
         "image": null,
         "agent": null
       },
@@ -32,66 +32,6 @@
       }
     },
     {
-      "id": "claude-opus-4-6-thinking",
-      "name": "Claude Opus 4.6 사고",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro · 확장 사고",
-      "scores": {
-        "overall": 1505,
-        "text": 1503,
-        "coding": 1546,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 2,
-        "text": 3.0,
-        "coding": 13,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 2,
-        "text": 1,
-        "coding": 5,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-opus-4-7-thinking",
-      "name": "Claude Opus 4.7 사고",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro · 확장 사고",
-      "scores": {
-        "overall": 1502,
-        "text": 1490,
-        "coding": 1558,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 3,
-        "text": 7.0,
-        "coding": 10,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 3,
-        "text": 4,
-        "coding": 3,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
       "id": "claude-opus-4-6",
       "name": "Claude Opus 4.6",
       "provider": "Anthropic",
@@ -100,7 +40,7 @@
       "free": false,
       "access": "유료 · Pro",
       "scores": {
-        "overall": 1498,
+        "overall": 1497,
         "text": 1497,
         "coding": 1537,
         "image": null,
@@ -109,7 +49,7 @@
       "arenaRanks": {
         "overall": 5,
         "text": 4.0,
-        "coding": 17,
+        "coding": 19,
         "image": null,
         "agent": null
       },
@@ -131,13 +71,13 @@
       "access": "유료 · Pro",
       "scores": {
         "overall": 1494,
-        "text": 1482,
+        "text": 1483,
         "coding": 1558,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 7,
+        "overall": 6,
         "text": 9.0,
         "coding": 11,
         "image": null,
@@ -168,8 +108,8 @@
       },
       "arenaRanks": {
         "overall": 13,
-        "text": 11.0,
-        "coding": 43,
+        "text": 12.0,
+        "coding": 44,
         "image": null,
         "agent": null
       },
@@ -191,52 +131,22 @@
       "access": "유료 · Plus 이상",
       "scores": {
         "overall": 1482,
-        "text": 1470,
+        "text": 1471,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 16,
+        "overall": 17,
         "text": 20.0,
         "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 8,
+        "overall": 7,
         "text": 8,
         "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-opus-4-8-thinking",
-      "name": "Claude Opus 4.8 사고",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro · 확장 사고",
-      "scores": {
-        "overall": 1481,
-        "text": 1460,
-        "coding": 1564,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 17,
-        "text": 28.0,
-        "coding": 9,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 7,
-        "text": 10,
-        "coding": 2,
         "image": null,
         "agent": null
       }
@@ -289,7 +199,7 @@
       "arenaRanks": {
         "overall": 19,
         "text": 10.0,
-        "coding": 29,
+        "coding": 30,
         "image": null,
         "agent": null
       },
@@ -297,6 +207,36 @@
         "overall": 10,
         "text": 6,
         "coding": 10,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "claude-opus-4-8",
+      "name": "Claude Opus 4.8",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": 1474,
+        "text": 1452,
+        "coding": 1539,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": 26,
+        "text": 34.0,
+        "coding": 17,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": 12,
+        "text": 13,
+        "coding": 7,
         "image": null,
         "agent": null
       }
@@ -317,8 +257,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 26,
-        "text": 98.0,
+        "overall": 27,
+        "text": 99.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -327,36 +267,6 @@
         "overall": 11,
         "text": 15,
         "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-opus-4-8",
-      "name": "Claude Opus 4.8",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro",
-      "scores": {
-        "overall": 1473,
-        "text": 1452,
-        "coding": 1540,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 27,
-        "text": 34.0,
-        "coding": 15,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 12,
-        "text": 13,
-        "coding": 7,
         "image": null,
         "agent": null
       }
@@ -401,7 +311,7 @@
       "access": "무료",
       "scores": {
         "overall": 1472,
-        "text": 1457,
+        "text": 1458,
         "coding": 1524,
         "image": null,
         "agent": null
@@ -430,16 +340,16 @@
       "free": true,
       "access": "무료",
       "scores": {
-        "overall": 1463,
+        "overall": 1462,
         "text": 1443,
-        "coding": 1542,
+        "coding": 1541,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 43,
-        "text": 52.0,
-        "coding": 14,
+        "overall": 44,
+        "text": 53.0,
+        "coding": 15,
         "image": null,
         "agent": null
       },
@@ -467,9 +377,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 88,
-        "text": 111.0,
-        "coding": 98,
+        "overall": 89,
+        "text": 112.0,
+        "coding": 99,
         "image": null,
         "agent": null
       },
@@ -490,7 +400,7 @@
       "free": true,
       "access": "무료",
       "scores": {
-        "overall": 1412,
+        "overall": 1413,
         "text": 1394,
         "coding": 1326,
         "image": null,
@@ -498,8 +408,8 @@
       },
       "arenaRanks": {
         "overall": 124,
-        "text": 139.0,
-        "coding": 88,
+        "text": 140.0,
+        "coding": 89,
         "image": null,
         "agent": null
       },
@@ -868,7 +778,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 6
+        "agent": 4
       }
     },
     {
@@ -928,7 +838,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 4
+        "agent": 6
       }
     },
     {
@@ -988,7 +898,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 9
+        "agent": 8
       }
     },
     {
@@ -1018,7 +928,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 8
+        "agent": 9
       }
     },
     {
@@ -1048,7 +958,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 11
+        "agent": 10
       }
     },
     {
@@ -1078,7 +988,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 10
+        "agent": 11
       }
     },
     {

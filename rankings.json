@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-13",
+  "lastUpdated": "2026-08-14",
   "models": [
     {
       "id": "claude-fable-5",
@@ -25,7 +25,7 @@
       },
       "prevRanks": {
         "overall": 1,
-        "text": 3,
+        "text": 2,
         "coding": 1,
         "image": null,
         "agent": null
@@ -54,9 +54,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 4,
-        "text": 2,
-        "coding": 8,
+        "overall": 2,
+        "text": 1,
+        "coding": 5,
         "image": null,
         "agent": null
       }
@@ -84,9 +84,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 5,
-        "text": 5,
-        "coding": 4,
+        "overall": 3,
+        "text": 3,
+        "coding": 2,
         "image": null,
         "agent": null
       }
@@ -114,9 +114,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 6,
-        "text": 7,
-        "coding": 11,
+        "overall": 4,
+        "text": 5,
+        "coding": 8,
         "image": null,
         "agent": null
       }
@@ -144,8 +144,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 7,
-        "text": 8,
+        "overall": 5,
+        "text": 6,
         "coding": null,
         "image": null,
         "agent": null
@@ -174,8 +174,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 9,
-        "text": 12,
+        "overall": 6,
+        "text": 9,
         "coding": null,
         "image": null,
         "agent": null
@@ -204,9 +204,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 10,
-        "text": 6,
-        "coding": 10,
+        "overall": 7,
+        "text": 4,
+        "coding": 7,
         "image": null,
         "agent": null
       }
@@ -234,9 +234,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 12,
-        "text": 13,
-        "coding": 7,
+        "overall": 8,
+        "text": 10,
+        "coding": 4,
         "image": null,
         "agent": null
       }
@@ -264,8 +264,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 11,
-        "text": 15,
+        "overall": 9,
+        "text": 12,
         "coding": null,
         "image": null,
         "agent": null
@@ -294,9 +294,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 13,
-        "text": 9,
-        "coding": 12,
+        "overall": 10,
+        "text": 7,
+        "coding": 9,
         "image": null,
         "agent": null
       }
@@ -324,9 +324,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 14,
-        "text": 11,
-        "coding": 9,
+        "overall": 11,
+        "text": 8,
+        "coding": 6,
         "image": null,
         "agent": null
       }
@@ -354,9 +354,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 15,
-        "text": 14,
-        "coding": 6,
+        "overall": 12,
+        "text": 11,
+        "coding": 3,
         "image": null,
         "agent": null
       }
@@ -384,9 +384,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 16,
-        "text": 16,
-        "coding": 14,
+        "overall": 13,
+        "text": 13,
+        "coding": 11,
         "image": null,
         "agent": null
       }
@@ -414,9 +414,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 17,
-        "text": 17,
-        "coding": 13,
+        "overall": 14,
+        "text": 14,
+        "coding": 10,
         "image": null,
         "agent": null
       }
@@ -689,66 +689,6 @@
         "coding": null,
         "image": null,
         "agent": 1
-      }
-    },
-    {
-      "id": "Claude Opus 4.8 (Thinking)",
-      "name": "Claude Opus 4.8 사고",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro · 확장 사고",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 6
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 2
-      }
-    },
-    {
-      "id": "Claude Opus 4.7 (Thinking)",
-      "name": "Claude Opus 4.7 사고",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro · 확장 사고",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 8
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 3
       }
     },
     {

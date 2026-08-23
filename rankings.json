@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-22",
+  "lastUpdated": "2026-08-23",
   "models": [
     {
       "id": "claude-fable-5",
@@ -266,7 +266,7 @@
       "prevRanks": {
         "overall": 9,
         "text": 10,
-        "coding": 4,
+        "coding": 3,
         "image": null,
         "agent": null
       }
@@ -356,7 +356,7 @@
       "prevRanks": {
         "overall": 12,
         "text": 11,
-        "coding": 3,
+        "coding": 4,
         "image": null,
         "agent": null
       }

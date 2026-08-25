@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-24",
+  "lastUpdated": "2026-08-25",
   "models": [
     {
       "id": "claude-fable-5",
@@ -681,7 +681,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 5
+        "agent": 4
       },
       "prevRanks": {
         "overall": null,
@@ -692,13 +692,13 @@
       }
     },
     {
-      "id": "GPT 5.5 (High)",
-      "name": "GPT-5.5 Thinking",
-      "provider": "OpenAI",
-      "color": "#10A37F",
-      "product": "ChatGPT",
-      "free": false,
-      "access": "유료 · Plus 이상",
+      "id": "Claude Sonnet 5 (High)",
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
       "scores": {
         "overall": null,
         "text": null,
@@ -711,14 +711,14 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 9
+        "agent": 8
       },
       "prevRanks": {
         "overall": null,
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 2
+        "agent": 4
       }
     },
     {
@@ -752,13 +752,13 @@
       }
     },
     {
-      "id": "Claude Sonnet 5 (High)",
-      "name": "Claude Sonnet 5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
+      "id": "GPT 5.5 (High)",
+      "name": "GPT-5.5 Thinking",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGPT",
+      "free": false,
+      "access": "유료 · Plus 이상",
       "scores": {
         "overall": null,
         "text": null,
@@ -771,14 +771,14 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 11
+        "agent": 12
       },
       "prevRanks": {
         "overall": null,
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 4
+        "agent": 2
       }
     },
     {
@@ -801,7 +801,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 12
+        "agent": 16
       },
       "prevRanks": {
         "overall": null,
@@ -809,36 +809,6 @@
         "coding": null,
         "image": null,
         "agent": 5
-      }
-    },
-    {
-      "id": "Claude Sonnet 4.6",
-      "name": "Claude Sonnet 4.6",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 23
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 6
       }
     },
     {
@@ -861,7 +831,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 24
+        "agent": 23
       },
       "prevRanks": {
         "overall": null,
@@ -869,6 +839,36 @@
         "coding": null,
         "image": null,
         "agent": 7
+      }
+    },
+    {
+      "id": "Claude Sonnet 4.6",
+      "name": "Claude Sonnet 4.6",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 24
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 6
       }
     },
     {
@@ -891,7 +891,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 29
+        "agent": 35
       },
       "prevRanks": {
         "overall": null,
@@ -921,7 +921,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 31
+        "agent": 36
       },
       "prevRanks": {
         "overall": null,
@@ -951,7 +951,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 43
+        "agent": 48
       },
       "prevRanks": {
         "overall": null,

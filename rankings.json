@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01",
+  "lastUpdated": "2026-09-02",
   "models": [
     {
       "id": "claude-fable-5",
@@ -11,7 +11,7 @@
       "access": "유료 · 주간한도의 최대 50%까지 사용",
       "scores": {
         "overall": 1507,
-        "text": 1495,
+        "text": 1494,
         "coding": 1628,
         "image": null,
         "agent": null
@@ -19,7 +19,7 @@
       "arenaRanks": {
         "overall": 1,
         "text": 5.0,
-        "coding": 7,
+        "coding": 8,
         "image": null,
         "agent": null
       },
@@ -40,16 +40,16 @@
       "free": false,
       "access": "유료 · Pro",
       "scores": {
-        "overall": 1497,
-        "text": 1497,
-        "coding": 1536,
+        "overall": 1498,
+        "text": 1498,
+        "coding": 1537,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 5,
         "text": 4.0,
-        "coding": 26,
+        "coding": 27,
         "image": null,
         "agent": null
       },
@@ -79,7 +79,7 @@
       "arenaRanks": {
         "overall": 6,
         "text": 10.0,
-        "coding": 18,
+        "coding": 19,
         "image": null,
         "agent": null
       },
@@ -109,7 +109,7 @@
       "arenaRanks": {
         "overall": 13,
         "text": 11.0,
-        "coding": 51,
+        "coding": 52,
         "image": null,
         "agent": null
       },
@@ -117,6 +117,36 @@
         "overall": 4,
         "text": 5,
         "coding": 8,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "gpt-5.6-sol-xhigh",
+      "name": "GPT-5.6 sol",
+      "provider": "OpenAI",
+      "color": "#10A37F",
+      "product": "ChatGpt",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": 1483,
+        "text": 1455,
+        "coding": null,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": 16,
+        "text": 35.0,
+        "coding": null,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": 6,
+        "text": 9,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -131,13 +161,13 @@
       "access": "유료 · Plus 이상",
       "scores": {
         "overall": 1482,
-        "text": 1471,
+        "text": 1472,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 16,
+        "overall": 17,
         "text": 21.0,
         "coding": null,
         "image": null,
@@ -146,36 +176,6 @@
       "prevRanks": {
         "overall": 5,
         "text": 6,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "gpt-5.6-sol-xhigh",
-      "name": "GPT-5.6 sol",
-      "provider": "OpenAI",
-      "color": "#10A37F",
-      "product": "ChatGpt",
-      "free": false,
-      "access": "유료 · Pro",
-      "scores": {
-        "overall": 1482,
-        "text": 1454,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 17,
-        "text": 36.0,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 6,
-        "text": 9,
         "coding": null,
         "image": null,
         "agent": null
@@ -191,7 +191,7 @@
       "access": "무료 · 유료 대비 사용량 제한",
       "scores": {
         "overall": 1479,
-        "text": 1483,
+        "text": 1484,
         "coding": 1501,
         "image": null,
         "agent": null
@@ -199,7 +199,7 @@
       "arenaRanks": {
         "overall": 21,
         "text": 9.0,
-        "coding": 37,
+        "coding": 38,
         "image": null,
         "agent": null
       },
@@ -227,9 +227,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 26,
-        "text": 26.0,
-        "coding": 55,
+        "overall": 28,
+        "text": 28.0,
+        "coding": 57,
         "image": null,
         "agent": null
       },
@@ -250,15 +250,15 @@
       "free": true,
       "access": "무료 · 제한적 이용",
       "scores": {
-        "overall": 1473,
+        "overall": 1474,
         "text": 1420,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 29,
-        "text": 106.0,
+        "overall": 30,
+        "text": 105.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -289,7 +289,7 @@
       "arenaRanks": {
         "overall": 31,
         "text": 38.0,
-        "coding": 22,
+        "coding": 23,
         "image": null,
         "agent": null
       },
@@ -317,9 +317,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 32,
+        "overall": 33,
         "text": 32.0,
-        "coding": 29,
+        "coding": 30,
         "image": null,
         "agent": null
       },
@@ -340,16 +340,16 @@
       "free": true,
       "access": "무료",
       "scores": {
-        "overall": 1461,
-        "text": 1442,
+        "overall": 1462,
+        "text": 1443,
         "coding": 1537,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 47,
-        "text": 58.0,
-        "coding": 25,
+        "overall": 46,
+        "text": 56.0,
+        "coding": 26,
         "image": null,
         "agent": null
       },
@@ -379,7 +379,7 @@
       "arenaRanks": {
         "overall": 94,
         "text": 117.0,
-        "coding": 107,
+        "coding": 108,
         "image": null,
         "agent": null
       },
@@ -402,14 +402,14 @@
       "scores": {
         "overall": 1413,
         "text": 1395,
-        "coding": 1328,
+        "coding": 1329,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 129,
         "text": 144.0,
-        "coding": 97,
+        "coding": 98,
         "image": null,
         "agent": null
       },

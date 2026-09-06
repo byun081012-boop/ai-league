@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-05",
+  "lastUpdated": "2026-09-06",
   "models": [
     {
       "id": "claude-fable-5",
@@ -12,13 +12,13 @@
       "scores": {
         "overall": 1507,
         "text": 1494,
-        "coding": 1628,
+        "coding": 1629,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 1,
-        "text": 5.0,
+        "text": 7.0,
         "coding": 8,
         "image": null,
         "agent": null
@@ -47,9 +47,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 5,
-        "text": 4.0,
-        "coding": 27,
+        "overall": 6,
+        "text": 5.0,
+        "coding": 30,
         "image": null,
         "agent": null
       },
@@ -77,9 +77,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 6,
-        "text": 10.0,
-        "coding": 19,
+        "overall": 7,
+        "text": 12.0,
+        "coding": 23,
         "image": null,
         "agent": null
       },
@@ -107,9 +107,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 13,
-        "text": 11.0,
-        "coding": 52,
+        "overall": 15,
+        "text": 13.0,
+        "coding": 57,
         "image": null,
         "agent": null
       },
@@ -137,8 +137,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 16,
-        "text": 35.0,
+        "overall": 17,
+        "text": 37.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -161,14 +161,14 @@
       "access": "유료 · Plus 이상",
       "scores": {
         "overall": 1482,
-        "text": 1472,
+        "text": 1471,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 17,
-        "text": 21.0,
+        "overall": 19,
+        "text": 24.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -192,14 +192,14 @@
       "scores": {
         "overall": 1479,
         "text": 1484,
-        "coding": 1501,
+        "coding": 1500,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 21,
-        "text": 9.0,
-        "coding": 38,
+        "overall": 23,
+        "text": 11.0,
+        "coding": 42,
         "image": null,
         "agent": null
       },
@@ -227,9 +227,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 28,
+        "overall": 30,
         "text": 28.0,
-        "coding": 57,
+        "coding": 60,
         "image": null,
         "agent": null
       },
@@ -257,7 +257,7 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 30,
+        "overall": 31,
         "text": 105.0,
         "coding": null,
         "image": null,
@@ -287,9 +287,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 31,
-        "text": 38.0,
-        "coding": 23,
+        "overall": 33,
+        "text": 41.0,
+        "coding": 28,
         "image": null,
         "agent": null
       },
@@ -312,14 +312,14 @@
       "scores": {
         "overall": 1472,
         "text": 1458,
-        "coding": 1522,
+        "coding": 1521,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 33,
-        "text": 32.0,
-        "coding": 30,
+        "overall": 35,
+        "text": 34.0,
+        "coding": 33,
         "image": null,
         "agent": null
       },
@@ -347,9 +347,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 46,
-        "text": 56.0,
-        "coding": 26,
+        "overall": 48,
+        "text": 57.0,
+        "coding": 31,
         "image": null,
         "agent": null
       },
@@ -377,9 +377,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 94,
-        "text": 117.0,
-        "coding": 108,
+        "overall": 95,
+        "text": 118.0,
+        "coding": 112,
         "image": null,
         "agent": null
       },
@@ -407,9 +407,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 129,
-        "text": 144.0,
-        "coding": 98,
+        "overall": 130,
+        "text": 145.0,
+        "coding": 102,
         "image": null,
         "agent": null
       },
@@ -433,7 +433,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1380,
+        "image": 1382,
         "agent": null
       },
       "arenaRanks": {
@@ -463,14 +463,14 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1263,
+        "image": 1261,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 5,
+        "image": 7,
         "agent": null
       },
       "prevRanks": {
@@ -500,7 +500,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 10,
+        "image": 12,
         "agent": null
       },
       "prevRanks": {
@@ -523,7 +523,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1155,
+        "image": 1154,
         "agent": null
       },
       "arenaRanks": {
@@ -560,7 +560,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 29,
+        "image": 30,
         "agent": null
       },
       "prevRanks": {
@@ -583,14 +583,14 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1146,
+        "image": 1147,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 31,
+        "image": 32,
         "agent": null
       },
       "prevRanks": {
@@ -620,7 +620,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 33,
+        "image": 34,
         "agent": null
       },
       "prevRanks": {
@@ -650,7 +650,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 43,
+        "image": 44,
         "agent": null
       },
       "prevRanks": {
@@ -681,7 +681,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 4
+        "agent": 5
       },
       "prevRanks": {
         "overall": null,
@@ -741,7 +741,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 10
+        "agent": 14
       },
       "prevRanks": {
         "overall": null,
@@ -771,7 +771,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 11
+        "agent": 15
       },
       "prevRanks": {
         "overall": null,
@@ -801,7 +801,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 17
+        "agent": 20
       },
       "prevRanks": {
         "overall": null,
@@ -831,7 +831,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 25
+        "agent": 29
       },
       "prevRanks": {
         "overall": null,
@@ -861,7 +861,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 31
+        "agent": 33
       },
       "prevRanks": {
         "overall": null,
@@ -891,7 +891,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 39
+        "agent": 41
       },
       "prevRanks": {
         "overall": null,
@@ -921,7 +921,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 40
+        "agent": 43
       },
       "prevRanks": {
         "overall": null,
@@ -951,7 +951,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 52
+        "agent": 55
       },
       "prevRanks": {
         "overall": null,

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09",
+  "lastUpdated": "2026-09-10",
   "models": [
     {
       "id": "claude-fable-5",
@@ -56,7 +56,7 @@
       "prevRanks": {
         "overall": 2,
         "text": 1,
-        "coding": 4,
+        "coding": 5,
         "image": null,
         "agent": null
       }
@@ -356,7 +356,7 @@
       "prevRanks": {
         "overall": 12,
         "text": 11,
-        "coding": 5,
+        "coding": 4,
         "image": null,
         "agent": null
       }
@@ -748,7 +748,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 7
+        "agent": 3
       }
     },
     {
@@ -778,7 +778,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 9
+        "agent": 4
       }
     }
   ]

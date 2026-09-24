@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-23",
+  "lastUpdated": "2026-09-24",
   "models": [
     {
       "id": "claude-fable-5",
@@ -49,14 +49,14 @@
       "arenaRanks": {
         "overall": 6,
         "text": 5.0,
-        "coding": 33,
+        "coding": 34,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 2,
         "text": 1,
-        "coding": 4,
+        "coding": 3,
         "image": null,
         "agent": null
       }
@@ -79,14 +79,14 @@
       "arenaRanks": {
         "overall": 7,
         "text": 12.0,
-        "coding": 25,
+        "coding": 27,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 3,
         "text": 3,
-        "coding": 2,
+        "coding": 1,
         "image": null,
         "agent": null
       }
@@ -109,14 +109,14 @@
       "arenaRanks": {
         "overall": 15,
         "text": 16.0,
-        "coding": 59,
+        "coding": 61,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 4,
         "text": 5,
-        "coding": 8,
+        "coding": 7,
         "image": null,
         "agent": null
       }
@@ -199,14 +199,14 @@
       "arenaRanks": {
         "overall": 25,
         "text": 13.0,
-        "coding": 45,
+        "coding": 47,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 7,
         "text": 4,
-        "coding": 7,
+        "coding": 6,
         "image": null,
         "agent": null
       }
@@ -259,14 +259,14 @@
       "arenaRanks": {
         "overall": 33,
         "text": 30.0,
-        "coding": 63,
+        "coding": 65,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 9,
         "text": 7,
-        "coding": 9,
+        "coding": 8,
         "image": null,
         "agent": null
       }
@@ -289,14 +289,14 @@
       "arenaRanks": {
         "overall": 35,
         "text": 40.0,
-        "coding": 32,
+        "coding": 36,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 10,
         "text": 10,
-        "coding": 3,
+        "coding": 4,
         "image": null,
         "agent": null
       }
@@ -319,14 +319,14 @@
       "arenaRanks": {
         "overall": 37,
         "text": 35.0,
-        "coding": 36,
+        "coding": 38,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 11,
         "text": 8,
-        "coding": 6,
+        "coding": 5,
         "image": null,
         "agent": null
       }
@@ -349,14 +349,14 @@
       "arenaRanks": {
         "overall": 51,
         "text": 62.0,
-        "coding": 31,
+        "coding": 33,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 12,
         "text": 11,
-        "coding": 5,
+        "coding": 2,
         "image": null,
         "agent": null
       }
@@ -379,14 +379,14 @@
       "arenaRanks": {
         "overall": 98,
         "text": 121.0,
-        "coding": 115,
+        "coding": 117,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 13,
         "text": 13,
-        "coding": 11,
+        "coding": 10,
         "image": null,
         "agent": null
       }
@@ -402,21 +402,21 @@
       "scores": {
         "overall": 1415,
         "text": 1397,
-        "coding": 1330,
+        "coding": 1329,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 129,
         "text": 147.0,
-        "coding": 105,
+        "coding": 107,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 14,
         "text": 14,
-        "coding": 10,
+        "coding": 9,
         "image": null,
         "agent": null
       }

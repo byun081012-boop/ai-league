@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-24",
+  "lastUpdated": "2026-09-25",
   "models": [
     {
       "id": "claude-fable-5",
@@ -49,7 +49,7 @@
       "arenaRanks": {
         "overall": 6,
         "text": 5.0,
-        "coding": 34,
+        "coding": 36,
         "image": null,
         "agent": null
       },
@@ -79,7 +79,7 @@
       "arenaRanks": {
         "overall": 7,
         "text": 12.0,
-        "coding": 27,
+        "coding": 29,
         "image": null,
         "agent": null
       },
@@ -109,7 +109,7 @@
       "arenaRanks": {
         "overall": 15,
         "text": 16.0,
-        "coding": 61,
+        "coding": 63,
         "image": null,
         "agent": null
       },
@@ -199,7 +199,7 @@
       "arenaRanks": {
         "overall": 25,
         "text": 13.0,
-        "coding": 47,
+        "coding": 49,
         "image": null,
         "agent": null
       },
@@ -259,7 +259,7 @@
       "arenaRanks": {
         "overall": 33,
         "text": 30.0,
-        "coding": 65,
+        "coding": 67,
         "image": null,
         "agent": null
       },
@@ -289,7 +289,7 @@
       "arenaRanks": {
         "overall": 35,
         "text": 40.0,
-        "coding": 36,
+        "coding": 38,
         "image": null,
         "agent": null
       },
@@ -319,7 +319,7 @@
       "arenaRanks": {
         "overall": 37,
         "text": 35.0,
-        "coding": 38,
+        "coding": 40,
         "image": null,
         "agent": null
       },
@@ -349,7 +349,7 @@
       "arenaRanks": {
         "overall": 51,
         "text": 62.0,
-        "coding": 33,
+        "coding": 35,
         "image": null,
         "agent": null
       },
@@ -379,7 +379,7 @@
       "arenaRanks": {
         "overall": 98,
         "text": 121.0,
-        "coding": 117,
+        "coding": 119,
         "image": null,
         "agent": null
       },
@@ -409,7 +409,7 @@
       "arenaRanks": {
         "overall": 129,
         "text": 147.0,
-        "coding": 107,
+        "coding": 109,
         "image": null,
         "agent": null
       },
@@ -433,7 +433,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1381,
+        "image": 1383,
         "agent": null
       },
       "arenaRanks": {
@@ -463,7 +463,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1260,
+        "image": 1261,
         "agent": null
       },
       "arenaRanks": {
@@ -493,7 +493,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1246,
+        "image": 1247,
         "agent": null
       },
       "arenaRanks": {
@@ -530,7 +530,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 29,
+        "image": 30,
         "agent": null
       },
       "prevRanks": {
@@ -560,7 +560,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 33,
+        "image": 32,
         "agent": null
       },
       "prevRanks": {
@@ -643,7 +643,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1115,
+        "image": 1116,
         "agent": null
       },
       "arenaRanks": {
@@ -711,7 +711,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 9
+        "agent": 8
       },
       "prevRanks": {
         "overall": null,
@@ -719,36 +719,6 @@
         "coding": null,
         "image": null,
         "agent": 2
-      }
-    },
-    {
-      "id": "Claude Sonnet 4.6",
-      "name": "Claude Sonnet 4.6",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 31
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 3
       }
     },
     {
@@ -771,7 +741,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 38
+        "agent": 37
       },
       "prevRanks": {
         "overall": null,

@@ -56,7 +56,6 @@
   "agent": {
     "GPT 5.6 Sol (xHigh)": 1,
     "Claude Sonnet 5 (High)": 2,
-    "Claude Sonnet 4.6": 3,
-    "Gemini 3.1 Pro Preview": 4
+    "Gemini 3.1 Pro Preview": 3
   }
 }

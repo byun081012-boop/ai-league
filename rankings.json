@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-06",
+  "lastUpdated": "2026-10-07",
   "models": [
     {
       "id": "claude-opus-4-6",
@@ -403,7 +403,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1383,
+        "image": 1384,
         "agent": null
       },
       "arenaRanks": {
@@ -440,7 +440,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 9,
+        "image": 10,
         "agent": null
       },
       "prevRanks": {
@@ -463,14 +463,14 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1247,
+        "image": 1248,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 14,
+        "image": 15,
         "agent": null
       },
       "prevRanks": {
@@ -493,14 +493,14 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1154,
+        "image": 1153,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 30,
+        "image": 31,
         "agent": null
       },
       "prevRanks": {
@@ -530,7 +530,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 32,
+        "image": 33,
         "agent": null
       },
       "prevRanks": {
@@ -553,7 +553,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1147,
+        "image": 1148,
         "agent": null
       },
       "arenaRanks": {
@@ -590,7 +590,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 37,
+        "image": 38,
         "agent": null
       },
       "prevRanks": {

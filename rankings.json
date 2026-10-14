@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-13",
+  "lastUpdated": "2026-10-14",
   "models": [
     {
       "id": "claude-opus-4-6",
@@ -651,7 +651,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 12
+        "agent": 11
       },
       "prevRanks": {
         "overall": null,
@@ -681,7 +681,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 13
+        "agent": 14
       },
       "prevRanks": {
         "overall": null,
@@ -711,7 +711,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 48
+        "agent": 37
       },
       "prevRanks": {
         "overall": null,

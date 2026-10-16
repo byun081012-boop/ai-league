@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-10-15",
+  "lastUpdated": "2026-10-16",
   "models": [
     {
-      "id": "claude-opus-4-6",
+      "id": "Claude Opus 4.6",
       "name": "Claude Opus 4.6",
       "provider": "Anthropic",
       "color": "#E8825A",
@@ -10,29 +10,29 @@
       "free": false,
       "access": "유료 · Pro",
       "scores": {
-        "overall": 1498,
+        "overall": 1497,
         "text": 1498,
-        "coding": 1537,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 8,
         "text": 9.0,
-        "coding": 46,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 1,
-        "text": 1,
-        "coding": 3,
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "claude-opus-4-7",
+      "id": "Claude Opus 4.7",
       "name": "Claude Opus 4.7",
       "provider": "Anthropic",
       "color": "#E8825A",
@@ -42,27 +42,27 @@
       "scores": {
         "overall": 1494,
         "text": 1483,
-        "coding": 1555,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 12,
+        "overall": 11,
         "text": 16.0,
-        "coding": 39,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 2,
-        "text": 2,
-        "coding": 1,
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "gemini-3.1-pro-preview",
+      "id": "Gemini 3.1 Pro Preview",
       "name": "Gemini 3.1 Pro",
       "provider": "Google",
       "color": "#4DA3FF",
@@ -72,23 +72,23 @@
       "scores": {
         "overall": 1487,
         "text": 1480,
-        "coding": 1447,
+        "coding": null,
         "image": null,
-        "agent": null
+        "agent": 0
       },
       "arenaRanks": {
         "overall": 19,
         "text": 19.0,
-        "coding": 72,
+        "coding": null,
         "image": null,
-        "agent": null
+        "agent": 41
       },
       "prevRanks": {
-        "overall": 3,
-        "text": 4,
-        "coding": 7,
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null,
-        "agent": null
+        "agent": 3
       }
     },
     {
@@ -228,7 +228,7 @@
       },
       "arenaRanks": {
         "overall": 43,
-        "text": 120.0,
+        "text": 121.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -318,7 +318,7 @@
       },
       "arenaRanks": {
         "overall": 58,
-        "text": 71.0,
+        "text": 72.0,
         "coding": 44,
         "image": null,
         "agent": null
@@ -371,14 +371,14 @@
       "access": "무료",
       "scores": {
         "overall": 1414,
-        "text": 1396,
+        "text": 1397,
         "coding": 1330,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 144,
-        "text": 158.0,
+        "text": 159.0,
         "coding": 118,
         "image": null,
         "agent": null
@@ -387,6 +387,96 @@
         "overall": 13,
         "text": 13,
         "coding": 9,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "claude-opus-4-7",
+      "name": "Claude Opus 4.7",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1555,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 39,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 1,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude Opus 4.6",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": false,
+      "access": "유료 · Pro",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1537,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 46,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 3,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "gemini-3.1-pro-preview",
+      "name": "Gemini 3.1 Pro",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 사용량 매우 제한적",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1447,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 72,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 7,
         "image": null,
         "agent": null
       }
@@ -689,36 +779,6 @@
         "coding": null,
         "image": null,
         "agent": 2
-      }
-    },
-    {
-      "id": "Gemini 3.1 Pro Preview",
-      "name": "Gemini 3.1 Pro",
-      "provider": "Google",
-      "color": "#4DA3FF",
-      "product": "Gemini",
-      "free": true,
-      "access": "무료 · 사용량 매우 제한적",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 41
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 3
       }
     }
   ]

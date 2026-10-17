@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-16",
+  "lastUpdated": "2026-10-17",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -12,20 +12,20 @@
       "scores": {
         "overall": 1497,
         "text": 1498,
-        "coding": null,
+        "coding": 1537,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 8,
         "text": 9.0,
-        "coding": null,
+        "coding": 46,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 1,
+        "text": 1,
         "coding": null,
         "image": null,
         "agent": null
@@ -42,20 +42,20 @@
       "scores": {
         "overall": 1494,
         "text": 1483,
-        "coding": null,
+        "coding": 1556,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 11,
         "text": 16.0,
-        "coding": null,
+        "coding": 38,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 2,
+        "text": 2,
         "coding": null,
         "image": null,
         "agent": null
@@ -72,23 +72,23 @@
       "scores": {
         "overall": 1487,
         "text": 1480,
-        "coding": null,
+        "coding": 1447,
         "image": null,
         "agent": 0
       },
       "arenaRanks": {
         "overall": 19,
         "text": 19.0,
-        "coding": null,
+        "coding": 73,
         "image": null,
-        "agent": 41
+        "agent": 39
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 3,
+        "text": 4,
         "coding": null,
         "image": null,
-        "agent": 3
+        "agent": 1
       }
     },
     {
@@ -162,21 +162,21 @@
       "scores": {
         "overall": 1477,
         "text": 1482,
-        "coding": 1499,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 29,
         "text": 18.0,
-        "coding": 58,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 6,
         "text": 3,
-        "coding": 6,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -192,21 +192,21 @@
       "scores": {
         "overall": 1474,
         "text": 1454,
-        "coding": 1536,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 40,
         "text": 47.0,
-        "coding": 47,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 7,
         "text": 9,
-        "coding": 4,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -252,21 +252,21 @@
       "scores": {
         "overall": 1473,
         "text": 1466,
-        "coding": 1440,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 44,
         "text": 36.0,
-        "coding": 75,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 9,
         "text": 6,
-        "coding": 8,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -282,21 +282,21 @@
       "scores": {
         "overall": 1472,
         "text": 1458,
-        "coding": 1522,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 45,
         "text": 41.0,
-        "coding": 49,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 10,
         "text": 7,
-        "coding": 5,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -312,21 +312,21 @@
       "scores": {
         "overall": 1461,
         "text": 1442,
-        "coding": 1540,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 58,
         "text": 72.0,
-        "coding": 44,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 11,
         "text": 10,
-        "coding": 2,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -342,21 +342,21 @@
       "scores": {
         "overall": 1433,
         "text": 1416,
-        "coding": 1256,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 110,
         "text": 130.0,
-        "coding": 127,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 12,
         "text": 12,
-        "coding": 10,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -372,28 +372,58 @@
       "scores": {
         "overall": 1414,
         "text": 1397,
-        "coding": 1330,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 144,
         "text": 159.0,
-        "coding": 118,
+        "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": 13,
         "text": 13,
-        "coding": 9,
+        "coding": null,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "claude-opus-4-7",
-      "name": "Claude Opus 4.7",
+      "id": "Claude Sonnet 5 (High)",
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1541,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 44,
+        "image": null,
+        "agent": 12
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": 3
+      }
+    },
+    {
+      "id": "Claude Opus 4.8",
+      "name": "Claude Opus 4.8",
       "provider": "Anthropic",
       "color": "#E8825A",
       "product": "Claude",
@@ -402,81 +432,171 @@
       "scores": {
         "overall": null,
         "text": null,
-        "coding": 1555,
+        "coding": 1536,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
-        "coding": 39,
+        "coding": 47,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": 1,
+        "coding": null,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "claude-opus-4-6",
-      "name": "Claude Opus 4.6",
+      "id": "Claude Sonnet 4.6",
+      "name": "Claude Sonnet 4.6",
       "provider": "Anthropic",
       "color": "#E8825A",
       "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro",
+      "free": true,
+      "access": "무료",
       "scores": {
         "overall": null,
         "text": null,
-        "coding": 1537,
+        "coding": 1523,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
-        "coding": 46,
+        "coding": 49,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": 3,
+        "coding": null,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "gemini-3.1-pro-preview",
-      "name": "Gemini 3.1 Pro",
+      "id": "Gemini 3.5 Flash (High)",
+      "name": "Gemini 3.5 Flash",
       "provider": "Google",
       "color": "#4DA3FF",
       "product": "Gemini",
       "free": true,
-      "access": "무료 · 사용량 매우 제한적",
+      "access": "무료 · 유료 대비 사용량 제한",
       "scores": {
         "overall": null,
         "text": null,
-        "coding": 1447,
+        "coding": 1500,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
-        "coding": 72,
+        "coding": 59,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": 7,
+        "coding": null,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "Gemini 3 Flash",
+      "name": "Gemini 3 Flash",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1440,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 77,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "Claude Haiku 4.5 (20251001)",
+      "name": "Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1330,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 120,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "Gemini 3.1 Flash-Lite Preview",
+      "name": "Gemini 3.1 Flash-Lite",
+      "provider": "Google",
+      "color": "#4DA3FF",
+      "product": "Gemini",
+      "free": true,
+      "access": "무료 · 기본 탑재, 넉넉한 사용량",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": 1257,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 129,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -722,7 +842,7 @@
       }
     },
     {
-      "id": "GPT 5.6 Sol (xHigh)",
+      "id": "GPT-5.6 Sol (xHigh)",
       "name": "GPT-5.6 sol",
       "provider": "OpenAI",
       "color": "#10A37F",
@@ -748,37 +868,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": 1
-      }
-    },
-    {
-      "id": "Claude Sonnet 5 (High)",
-      "name": "Claude Sonnet 5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 13
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 2
+        "agent": null
       }
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-17",
+  "lastUpdated": "2026-10-18",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -26,7 +26,7 @@
       "prevRanks": {
         "overall": 1,
         "text": 1,
-        "coding": null,
+        "coding": 3,
         "image": null,
         "agent": null
       }
@@ -56,7 +56,7 @@
       "prevRanks": {
         "overall": 2,
         "text": 2,
-        "coding": null,
+        "coding": 1,
         "image": null,
         "agent": null
       }
@@ -86,7 +86,7 @@
       "prevRanks": {
         "overall": 3,
         "text": 4,
-        "coding": null,
+        "coding": 7,
         "image": null,
         "agent": 1
       }
@@ -416,9 +416,9 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 2,
         "image": null,
-        "agent": 3
+        "agent": 2
       }
     },
     {
@@ -446,7 +446,7 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 4,
         "image": null,
         "agent": null
       }
@@ -476,7 +476,7 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 5,
         "image": null,
         "agent": null
       }
@@ -506,7 +506,7 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 6,
         "image": null,
         "agent": null
       }
@@ -536,7 +536,7 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 8,
         "image": null,
         "agent": null
       }
@@ -566,7 +566,7 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 9,
         "image": null,
         "agent": null
       }
@@ -596,7 +596,7 @@
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": null,
+        "coding": 10,
         "image": null,
         "agent": null
       }
@@ -868,7 +868,7 @@
         "text": null,
         "coding": null,
         "image": null,
-        "agent": null
+        "agent": 3
       }
     }
   ]

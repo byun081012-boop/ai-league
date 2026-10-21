@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-20",
+  "lastUpdated": "2026-10-21",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -11,7 +11,7 @@
       "access": "유료 · Pro",
       "scores": {
         "overall": 1497,
-        "text": 1498,
+        "text": 1497,
         "coding": 1537,
         "image": null,
         "agent": null
@@ -81,7 +81,7 @@
         "text": 19.0,
         "coding": 76,
         "image": null,
-        "agent": 38
+        "agent": 37
       },
       "prevRanks": {
         "overall": 3,
@@ -92,7 +92,7 @@
       }
     },
     {
-      "id": "gpt-5.6-sol-xhigh",
+      "id": "GPT-5.6 Sol (xHigh)",
       "name": "GPT-5.6 sol",
       "provider": "OpenAI",
       "color": "#10A37F",
@@ -100,29 +100,29 @@
       "free": false,
       "access": "유료 · Pro",
       "scores": {
-        "overall": 1485,
+        "overall": 1484,
         "text": 1457,
         "coding": null,
         "image": null,
-        "agent": null
+        "agent": 0
       },
       "arenaRanks": {
         "overall": 21,
         "text": 43.0,
         "coding": null,
         "image": null,
-        "agent": null
+        "agent": 10
       },
       "prevRanks": {
-        "overall": 4,
-        "text": 8,
+        "overall": null,
+        "text": null,
         "coding": null,
         "image": null,
-        "agent": null
+        "agent": 3
       }
     },
     {
-      "id": "gpt-5.5-high",
+      "id": "GPT-5.5 (High)",
       "name": "GPT-5.5 Thinking",
       "provider": "OpenAI",
       "color": "#10A37F",
@@ -137,22 +137,22 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 26,
-        "text": 28.0,
+        "overall": 24,
+        "text": 30.0,
         "coding": null,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 5,
-        "text": 5,
+        "overall": null,
+        "text": null,
         "coding": null,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "gemini-3.5-flash-high",
+      "id": "Gemini 3.5 Flash (High)",
       "name": "Gemini 3.5 Flash",
       "provider": "Google",
       "color": "#4DA3FF",
@@ -162,27 +162,27 @@
       "scores": {
         "overall": 1477,
         "text": 1482,
-        "coding": null,
+        "coding": 1499,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 29,
         "text": 18.0,
-        "coding": null,
+        "coding": 62,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 6,
-        "text": 3,
-        "coding": null,
+        "overall": null,
+        "text": null,
+        "coding": 6,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "claude-opus-4-8",
+      "id": "Claude Opus 4.8",
       "name": "Claude Opus 4.8",
       "provider": "Anthropic",
       "color": "#E8825A",
@@ -192,27 +192,27 @@
       "scores": {
         "overall": 1474,
         "text": 1454,
-        "coding": null,
+        "coding": 1536,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 40,
-        "text": 47.0,
-        "coding": null,
+        "text": 46.0,
+        "coding": 50,
         "image": null,
         "agent": null
       },
       "prevRanks": {
-        "overall": 7,
-        "text": 9,
-        "coding": null,
+        "overall": null,
+        "text": null,
+        "coding": 4,
         "image": null,
         "agent": null
       }
     },
     {
-      "id": "gpt-5.5-instant",
+      "id": "GPT-5.5 Instant",
       "name": "GPT-5.5 Instant",
       "provider": "OpenAI",
       "color": "#10A37F",
@@ -234,279 +234,9 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": 8,
-        "text": 11,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "gemini-3-flash",
-      "name": "Gemini 3 Flash",
-      "provider": "Google",
-      "color": "#4DA3FF",
-      "product": "Gemini",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": 1473,
-        "text": 1466,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 44,
-        "text": 36.0,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 9,
-        "text": 6,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-sonnet-4-6",
-      "name": "Claude Sonnet 4.6",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": 1472,
-        "text": 1458,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 45,
-        "text": 41.0,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 10,
-        "text": 7,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-sonnet-5-high",
-      "name": "Claude Sonnet 5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": 1461,
-        "text": 1442,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 58,
-        "text": 72.0,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 11,
-        "text": 10,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "gemini-3.1-flash-lite-preview",
-      "name": "Gemini 3.1 Flash-Lite",
-      "provider": "Google",
-      "color": "#4DA3FF",
-      "product": "Gemini",
-      "free": true,
-      "access": "무료 · 기본 탑재, 넉넉한 사용량",
-      "scores": {
-        "overall": 1433,
-        "text": 1416,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 110,
-        "text": 130.0,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 12,
-        "text": 12,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "claude-haiku-4-5-20251001",
-      "name": "Claude Haiku 4.5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": 1414,
-        "text": 1397,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": 144,
-        "text": 159.0,
-        "coding": null,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": 13,
-        "text": 13,
-        "coding": null,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "Claude Sonnet 5 (High)",
-      "name": "Claude Sonnet 5",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
         "overall": null,
         "text": null,
-        "coding": 1540,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 47,
-        "image": null,
-        "agent": 11
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 2,
-        "image": null,
-        "agent": 2
-      }
-    },
-    {
-      "id": "Claude Opus 4.8",
-      "name": "Claude Opus 4.8",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": false,
-      "access": "유료 · Pro",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": 1536,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 50,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 4,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "Claude Sonnet 4.6",
-      "name": "Claude Sonnet 4.6",
-      "provider": "Anthropic",
-      "color": "#E8825A",
-      "product": "Claude",
-      "free": true,
-      "access": "무료",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": 1523,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 53,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 5,
-        "image": null,
-        "agent": null
-      }
-    },
-    {
-      "id": "Gemini 3.5 Flash (High)",
-      "name": "Gemini 3.5 Flash",
-      "provider": "Google",
-      "color": "#4DA3FF",
-      "product": "Gemini",
-      "free": true,
-      "access": "무료 · 유료 대비 사용량 제한",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": 1499,
-        "image": null,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 62,
-        "image": null,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 6,
+        "coding": null,
         "image": null,
         "agent": null
       }
@@ -520,15 +250,15 @@
       "free": true,
       "access": "무료",
       "scores": {
-        "overall": null,
-        "text": null,
+        "overall": 1473,
+        "text": 1466,
         "coding": 1440,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 44,
+        "text": 36.0,
         "coding": 79,
         "image": null,
         "agent": null
@@ -542,33 +272,63 @@
       }
     },
     {
-      "id": "Claude Haiku 4.5 (20251001)",
-      "name": "Claude Haiku 4.5",
+      "id": "Claude Sonnet 4.6",
+      "name": "Claude Sonnet 4.6",
       "provider": "Anthropic",
       "color": "#E8825A",
       "product": "Claude",
       "free": true,
       "access": "무료",
       "scores": {
-        "overall": null,
-        "text": null,
-        "coding": 1330,
+        "overall": 1472,
+        "text": 1458,
+        "coding": 1523,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": 123,
+        "overall": 45,
+        "text": 41.0,
+        "coding": 53,
         "image": null,
         "agent": null
       },
       "prevRanks": {
         "overall": null,
         "text": null,
-        "coding": 9,
+        "coding": 5,
         "image": null,
         "agent": null
+      }
+    },
+    {
+      "id": "Claude Sonnet 5 (High)",
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1461,
+        "text": 1442,
+        "coding": 1540,
+        "image": null,
+        "agent": 0
+      },
+      "arenaRanks": {
+        "overall": 58,
+        "text": 71.0,
+        "coding": 47,
+        "image": null,
+        "agent": 11
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 2,
+        "image": null,
+        "agent": 2
       }
     },
     {
@@ -580,15 +340,15 @@
       "free": true,
       "access": "무료 · 기본 탑재, 넉넉한 사용량",
       "scores": {
-        "overall": null,
-        "text": null,
+        "overall": 1433,
+        "text": 1416,
         "coding": 1257,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 111,
+        "text": 131.0,
         "coding": 133,
         "image": null,
         "agent": null
@@ -597,6 +357,36 @@
         "overall": null,
         "text": null,
         "coding": 10,
+        "image": null,
+        "agent": null
+      }
+    },
+    {
+      "id": "Claude Haiku 4.5 (20251001)",
+      "name": "Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "color": "#E8825A",
+      "product": "Claude",
+      "free": true,
+      "access": "무료",
+      "scores": {
+        "overall": 1415,
+        "text": 1397,
+        "coding": 1330,
+        "image": null,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": 143,
+        "text": 158.0,
+        "coding": 123,
+        "image": null,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": 9,
         "image": null,
         "agent": null
       }
@@ -839,36 +629,6 @@
         "coding": null,
         "image": 8,
         "agent": null
-      }
-    },
-    {
-      "id": "GPT-5.6 Sol (xHigh)",
-      "name": "GPT-5.6 sol",
-      "provider": "OpenAI",
-      "color": "#10A37F",
-      "product": "ChatGpt",
-      "free": false,
-      "access": "유료 · Pro",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 0
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 10
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": null,
-        "agent": 3
       }
     }
   ]

@@ -3,31 +3,31 @@
     "Claude Opus 4.6": 1,
     "Claude Opus 4.7": 2,
     "Gemini 3.1 Pro Preview": 3,
-    "gpt-5.6-sol-xhigh": 4,
-    "gpt-5.5-high": 5,
-    "gemini-3.5-flash-high": 6,
-    "claude-opus-4-8": 7,
-    "gpt-5.5-instant": 8,
-    "gemini-3-flash": 9,
-    "claude-sonnet-4-6": 10,
-    "claude-sonnet-5-high": 11,
-    "gemini-3.1-flash-lite-preview": 12,
-    "claude-haiku-4-5-20251001": 13
+    "GPT-5.6 Sol (xHigh)": 4,
+    "GPT-5.5 (High)": 5,
+    "Gemini 3.5 Flash (High)": 6,
+    "Claude Opus 4.8": 7,
+    "GPT-5.5 Instant": 8,
+    "Gemini 3 Flash": 9,
+    "Claude Sonnet 4.6": 10,
+    "Claude Sonnet 5 (High)": 11,
+    "Gemini 3.1 Flash-Lite Preview": 12,
+    "Claude Haiku 4.5 (20251001)": 13
   },
   "text": {
     "Claude Opus 4.6": 1,
     "Claude Opus 4.7": 2,
-    "gemini-3.5-flash-high": 3,
+    "Gemini 3.5 Flash (High)": 3,
     "Gemini 3.1 Pro Preview": 4,
-    "gpt-5.5-high": 5,
-    "gemini-3-flash": 6,
-    "claude-sonnet-4-6": 7,
-    "gpt-5.6-sol-xhigh": 8,
-    "claude-opus-4-8": 9,
-    "claude-sonnet-5-high": 10,
-    "gpt-5.5-instant": 11,
-    "gemini-3.1-flash-lite-preview": 12,
-    "claude-haiku-4-5-20251001": 13
+    "GPT-5.5 (High)": 5,
+    "Gemini 3 Flash": 6,
+    "Claude Sonnet 4.6": 7,
+    "GPT-5.6 Sol (xHigh)": 8,
+    "Claude Opus 4.8": 9,
+    "Claude Sonnet 5 (High)": 10,
+    "GPT-5.5 Instant": 11,
+    "Gemini 3.1 Flash-Lite Preview": 12,
+    "Claude Haiku 4.5 (20251001)": 13
   },
   "coding": {
     "Claude Opus 4.7": 1,
@@ -53,7 +53,7 @@
   },
   "agent": {
     "Gemini 3.1 Pro Preview": 1,
-    "Claude Sonnet 5 (High)": 2,
-    "GPT-5.6 Sol (xHigh)": 3
+    "GPT-5.6 Sol (xHigh)": 2,
+    "Claude Sonnet 5 (High)": 3
   }
 }

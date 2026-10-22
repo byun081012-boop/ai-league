@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-21",
+  "lastUpdated": "2026-10-22",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -114,11 +114,11 @@
         "agent": 10
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 4,
+        "text": 8,
         "coding": null,
         "image": null,
-        "agent": 3
+        "agent": 2
       }
     },
     {
@@ -144,8 +144,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 5,
+        "text": 5,
         "coding": null,
         "image": null,
         "agent": null
@@ -174,8 +174,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 6,
+        "text": 3,
         "coding": 6,
         "image": null,
         "agent": null
@@ -204,8 +204,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 7,
+        "text": 9,
         "coding": 4,
         "image": null,
         "agent": null
@@ -234,8 +234,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 8,
+        "text": 11,
         "coding": null,
         "image": null,
         "agent": null
@@ -264,8 +264,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 9,
+        "text": 6,
         "coding": 8,
         "image": null,
         "agent": null
@@ -294,8 +294,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 10,
+        "text": 7,
         "coding": 5,
         "image": null,
         "agent": null
@@ -324,11 +324,11 @@
         "agent": 11
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 11,
+        "text": 10,
         "coding": 2,
         "image": null,
-        "agent": 2
+        "agent": 3
       }
     },
     {
@@ -354,8 +354,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 12,
+        "text": 12,
         "coding": 10,
         "image": null,
         "agent": null
@@ -384,8 +384,8 @@
         "agent": null
       },
       "prevRanks": {
-        "overall": null,
-        "text": null,
+        "overall": 13,
+        "text": 13,
         "coding": 9,
         "image": null,
         "agent": null

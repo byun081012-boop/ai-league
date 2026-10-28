@@ -42,14 +42,10 @@
     "Gemini 3.1 Flash-Lite Preview": 10
   },
   "image": {
-    "gpt-image-2 (medium)": 1,
-    "gemini-3.1-flash-image (nano-banana-2) [web-search]": 2,
-    "gemini-3-pro-image-2k (nano-banana-pro)": 3,
-    "flux-2-pro": 4,
-    "gemini-2.5-flash-image-preview (nano-banana)": 5,
-    "seedream-4.5": 6,
-    "seedream-4-2k": 7,
-    "gpt-image-1": 8
+    "GPT-Image-2 (Medium)": 1,
+    "Seedream 4.5": 2,
+    "Gemini 2.5 Flash Image Preview (nano-banana)": 3,
+    "GPT-Image-1": 4
   },
   "agent": {
     "Gemini 3.1 Pro Preview": 1,

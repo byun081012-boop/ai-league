@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-28",
+  "lastUpdated": "2026-10-29",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -19,7 +19,7 @@
       "arenaRanks": {
         "overall": 8,
         "text": 9.0,
-        "coding": 50,
+        "coding": 51,
         "image": null,
         "agent": null
       },
@@ -49,7 +49,7 @@
       "arenaRanks": {
         "overall": 11,
         "text": 16.0,
-        "coding": 43,
+        "coding": 44,
         "image": null,
         "agent": null
       },
@@ -79,7 +79,7 @@
       "arenaRanks": {
         "overall": 19,
         "text": 19.0,
-        "coding": 78,
+        "coding": 79,
         "image": null,
         "agent": 35
       },
@@ -169,7 +169,7 @@
       "arenaRanks": {
         "overall": 30,
         "text": 18.0,
-        "coding": 63,
+        "coding": 64,
         "image": null,
         "agent": null
       },
@@ -199,7 +199,7 @@
       "arenaRanks": {
         "overall": 40,
         "text": 46.0,
-        "coding": 51,
+        "coding": 52,
         "image": null,
         "agent": null
       },
@@ -289,7 +289,7 @@
       "arenaRanks": {
         "overall": 45,
         "text": 41.0,
-        "coding": 54,
+        "coding": 55,
         "image": null,
         "agent": null
       },
@@ -312,14 +312,14 @@
       "scores": {
         "overall": 1461,
         "text": 1442,
-        "coding": 1541,
+        "coding": 1540,
         "image": null,
         "agent": 0
       },
       "arenaRanks": {
         "overall": 58,
         "text": 71.0,
-        "coding": 48,
+        "coding": 49,
         "image": null,
         "agent": 11
       },
@@ -349,7 +349,7 @@
       "arenaRanks": {
         "overall": 112,
         "text": 131.0,
-        "coding": 135,
+        "coding": 136,
         "image": null,
         "agent": null
       },
@@ -379,7 +379,7 @@
       "arenaRanks": {
         "overall": 144,
         "text": 161.0,
-        "coding": 126,
+        "coding": 127,
         "image": null,
         "agent": null
       },
@@ -417,7 +417,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null,
+        "image": 1,
         "agent": null
       }
     },
@@ -447,7 +447,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null,
+        "image": 2,
         "agent": null
       }
     },
@@ -477,7 +477,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null,
+        "image": 3,
         "agent": null
       }
     },
@@ -507,7 +507,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": null,
+        "image": 4,
         "agent": null
       }
     }

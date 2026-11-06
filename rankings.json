@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-05",
+  "lastUpdated": "2026-11-06",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -81,7 +81,7 @@
         "text": 20.0,
         "coding": 80,
         "image": null,
-        "agent": 40
+        "agent": 41
       },
       "prevRanks": {
         "overall": 3,
@@ -111,7 +111,7 @@
         "text": 44.0,
         "coding": null,
         "image": null,
-        "agent": 14
+        "agent": 15
       },
       "prevRanks": {
         "overall": 4,
@@ -321,7 +321,7 @@
         "text": 71.0,
         "coding": 50,
         "image": null,
-        "agent": 15
+        "agent": 20
       },
       "prevRanks": {
         "overall": 11,
@@ -403,14 +403,14 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 1381,
+        "image": 1382,
         "agent": null
       },
       "arenaRanks": {
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 3,
+        "image": 5,
         "agent": null
       },
       "prevRanks": {
@@ -418,36 +418,6 @@
         "text": null,
         "coding": null,
         "image": 1,
-        "agent": null
-      }
-    },
-    {
-      "id": "Seedream 4.5",
-      "name": "Seedream 4.5",
-      "provider": "Bytedance",
-      "color": "#9A957F",
-      "product": "Dreamina",
-      "free": true,
-      "access": "무료 · 크레딧제",
-      "scores": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": 1149,
-        "agent": null
-      },
-      "arenaRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": 35,
-        "agent": null
-      },
-      "prevRanks": {
-        "overall": null,
-        "text": null,
-        "coding": null,
-        "image": 2,
         "agent": null
       }
     },
@@ -470,7 +440,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 36,
+        "image": 37,
         "agent": null
       },
       "prevRanks": {
@@ -478,6 +448,36 @@
         "text": null,
         "coding": null,
         "image": 3,
+        "agent": null
+      }
+    },
+    {
+      "id": "Seedream 4.5",
+      "name": "Seedream 4.5",
+      "provider": "Bytedance",
+      "color": "#9A957F",
+      "product": "Dreamina",
+      "free": true,
+      "access": "무료 · 크레딧제",
+      "scores": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 1148,
+        "agent": null
+      },
+      "arenaRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 38,
+        "agent": null
+      },
+      "prevRanks": {
+        "overall": null,
+        "text": null,
+        "coding": null,
+        "image": 2,
         "agent": null
       }
     },
@@ -500,7 +500,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 49,
+        "image": 51,
         "agent": null
       },
       "prevRanks": {

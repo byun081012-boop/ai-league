@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-06",
+  "lastUpdated": "2026-11-07",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -447,7 +447,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 3,
+        "image": 2,
         "agent": null
       }
     },
@@ -477,7 +477,7 @@
         "overall": null,
         "text": null,
         "coding": null,
-        "image": 2,
+        "image": 3,
         "agent": null
       }
     },

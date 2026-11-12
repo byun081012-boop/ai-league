@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-11",
+  "lastUpdated": "2026-11-12",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -19,7 +19,7 @@
       "arenaRanks": {
         "overall": 10,
         "text": 10.0,
-        "coding": 54,
+        "coding": 56,
         "image": null,
         "agent": null
       },
@@ -49,7 +49,7 @@
       "arenaRanks": {
         "overall": 12,
         "text": 18.0,
-        "coding": 48,
+        "coding": 50,
         "image": null,
         "agent": null
       },
@@ -79,7 +79,7 @@
       "arenaRanks": {
         "overall": 20,
         "text": 20.0,
-        "coding": 82,
+        "coding": 84,
         "image": null,
         "agent": 39
       },
@@ -169,7 +169,7 @@
       "arenaRanks": {
         "overall": 31,
         "text": 19.0,
-        "coding": 67,
+        "coding": 69,
         "image": null,
         "agent": null
       },
@@ -199,7 +199,7 @@
       "arenaRanks": {
         "overall": 39,
         "text": 48.0,
-        "coding": 55,
+        "coding": 57,
         "image": null,
         "agent": null
       },
@@ -252,14 +252,14 @@
       "scores": {
         "overall": 1473,
         "text": 1466,
-        "coding": 1440,
+        "coding": 1439,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
         "overall": 45,
         "text": 37.0,
-        "coding": 85,
+        "coding": 87,
         "image": null,
         "agent": null
       },
@@ -289,7 +289,7 @@
       "arenaRanks": {
         "overall": 48,
         "text": 43.0,
-        "coding": 58,
+        "coding": 60,
         "image": null,
         "agent": null
       },
@@ -319,7 +319,7 @@
       "arenaRanks": {
         "overall": 60,
         "text": 75.0,
-        "coding": 52,
+        "coding": 54,
         "image": null,
         "agent": 21
       },
@@ -349,7 +349,7 @@
       "arenaRanks": {
         "overall": 113,
         "text": 132.0,
-        "coding": 140,
+        "coding": 142,
         "image": null,
         "agent": null
       },
@@ -379,7 +379,7 @@
       "arenaRanks": {
         "overall": 149,
         "text": 164.0,
-        "coding": 130,
+        "coding": 132,
         "image": null,
         "agent": null
       },

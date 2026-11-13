@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-12",
+  "lastUpdated": "2026-11-13",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -81,7 +81,7 @@
         "text": 20.0,
         "coding": 84,
         "image": null,
-        "agent": 39
+        "agent": 41
       },
       "prevRanks": {
         "overall": 3,
@@ -111,7 +111,7 @@
         "text": 45.0,
         "coding": null,
         "image": null,
-        "agent": 15
+        "agent": 16
       },
       "prevRanks": {
         "overall": 4,
@@ -321,7 +321,7 @@
         "text": 75.0,
         "coding": 54,
         "image": null,
-        "agent": 21
+        "agent": 23
       },
       "prevRanks": {
         "overall": 11,

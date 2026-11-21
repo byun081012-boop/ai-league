@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-20",
+  "lastUpdated": "2026-11-21",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -10,16 +10,16 @@
       "free": false,
       "access": "유료 · Pro",
       "scores": {
-        "overall": 1497,
+        "overall": 1496,
         "text": 1497,
         "coding": 1537,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 12,
+        "overall": 13,
         "text": 12.0,
-        "coding": 61,
+        "coding": 62,
         "image": null,
         "agent": null
       },
@@ -47,9 +47,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 13,
+        "overall": 14,
         "text": 20.0,
-        "coding": 54,
+        "coding": 55,
         "image": null,
         "agent": null
       },
@@ -77,9 +77,9 @@
         "agent": 0
       },
       "arenaRanks": {
-        "overall": 22,
+        "overall": 23,
         "text": 22.0,
-        "coding": 89,
+        "coding": 90,
         "image": null,
         "agent": 52
       },
@@ -108,7 +108,7 @@
       },
       "arenaRanks": {
         "overall": 25,
-        "text": 47.0,
+        "text": 48.0,
         "coding": null,
         "image": null,
         "agent": 25
@@ -137,8 +137,8 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 31,
-        "text": 33.0,
+        "overall": 32,
+        "text": 34.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -160,16 +160,16 @@
       "free": true,
       "access": "무료 · 유료 대비 사용량 제한",
       "scores": {
-        "overall": 1478,
+        "overall": 1479,
         "text": 1483,
         "coding": 1500,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 33,
+        "overall": 34,
         "text": 21.0,
-        "coding": 74,
+        "coding": 75,
         "image": null,
         "agent": null
       },
@@ -197,9 +197,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 43,
-        "text": 50.0,
-        "coding": 62,
+        "overall": 45,
+        "text": 51.0,
+        "coding": 63,
         "image": null,
         "agent": null
       },
@@ -221,14 +221,14 @@
       "access": "무료 · 제한적 이용",
       "scores": {
         "overall": 1474,
-        "text": 1420,
+        "text": 1419,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 46,
-        "text": 121.0,
+        "overall": 47,
+        "text": 122.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -257,9 +257,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 48,
-        "text": 39.0,
-        "coding": 92,
+        "overall": 50,
+        "text": 40.0,
+        "coding": 93,
         "image": null,
         "agent": null
       },
@@ -287,9 +287,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 50,
-        "text": 46.0,
-        "coding": 65,
+        "overall": 52,
+        "text": 47.0,
+        "coding": 66,
         "image": null,
         "agent": null
       },
@@ -317,9 +317,9 @@
         "agent": 0
       },
       "arenaRanks": {
-        "overall": 63,
-        "text": 77.0,
-        "coding": 59,
+        "overall": 67,
+        "text": 78.0,
+        "coding": 60,
         "image": null,
         "agent": 31
       },
@@ -347,9 +347,9 @@
         "agent": null
       },
       "arenaRanks": {
-        "overall": 114,
-        "text": 133.0,
-        "coding": 146,
+        "overall": 118,
+        "text": 135.0,
+        "coding": 147,
         "image": null,
         "agent": null
       },
@@ -371,15 +371,15 @@
       "access": "무료",
       "scores": {
         "overall": 1414,
-        "text": 1397,
+        "text": 1396,
         "coding": 1330,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 150,
-        "text": 165.0,
-        "coding": 136,
+        "overall": 154,
+        "text": 169.0,
+        "coding": 137,
         "image": null,
         "agent": null
       },

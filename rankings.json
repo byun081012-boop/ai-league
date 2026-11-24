@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-24",
   "models": [
     {
       "id": "Claude Opus 4.6",
@@ -19,7 +19,7 @@
       "arenaRanks": {
         "overall": 13,
         "text": 12.0,
-        "coding": 62,
+        "coding": 63,
         "image": null,
         "agent": null
       },
@@ -49,7 +49,7 @@
       "arenaRanks": {
         "overall": 14,
         "text": 20.0,
-        "coding": 55,
+        "coding": 56,
         "image": null,
         "agent": null
       },
@@ -79,7 +79,7 @@
       "arenaRanks": {
         "overall": 23,
         "text": 22.0,
-        "coding": 90,
+        "coding": 91,
         "image": null,
         "agent": 52
       },
@@ -160,7 +160,7 @@
       "free": true,
       "access": "무료 · 유료 대비 사용량 제한",
       "scores": {
-        "overall": 1479,
+        "overall": 1478,
         "text": 1483,
         "coding": 1500,
         "image": null,
@@ -169,7 +169,7 @@
       "arenaRanks": {
         "overall": 34,
         "text": 21.0,
-        "coding": 75,
+        "coding": 76,
         "image": null,
         "agent": null
       },
@@ -192,14 +192,14 @@
       "scores": {
         "overall": 1474,
         "text": 1454,
-        "coding": 1537,
+        "coding": 1536,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 45,
+        "overall": 44,
         "text": 51.0,
-        "coding": 63,
+        "coding": 64,
         "image": null,
         "agent": null
       },
@@ -220,15 +220,15 @@
       "free": true,
       "access": "무료 · 제한적 이용",
       "scores": {
-        "overall": 1474,
+        "overall": 1473,
         "text": 1419,
         "coding": null,
         "image": null,
         "agent": null
       },
       "arenaRanks": {
-        "overall": 47,
-        "text": 122.0,
+        "overall": 48,
+        "text": 124.0,
         "coding": null,
         "image": null,
         "agent": null
@@ -259,7 +259,7 @@
       "arenaRanks": {
         "overall": 50,
         "text": 40.0,
-        "coding": 93,
+        "coding": 94,
         "image": null,
         "agent": null
       },
@@ -289,7 +289,7 @@
       "arenaRanks": {
         "overall": 52,
         "text": 47.0,
-        "coding": 66,
+        "coding": 67,
         "image": null,
         "agent": null
       },
@@ -319,9 +319,9 @@
       "arenaRanks": {
         "overall": 67,
         "text": 78.0,
-        "coding": 60,
+        "coding": 61,
         "image": null,
-        "agent": 31
+        "agent": 32
       },
       "prevRanks": {
         "overall": 11,
@@ -349,7 +349,7 @@
       "arenaRanks": {
         "overall": 118,
         "text": 135.0,
-        "coding": 147,
+        "coding": 148,
         "image": null,
         "agent": null
       },
@@ -371,7 +371,7 @@
       "access": "무료",
       "scores": {
         "overall": 1414,
-        "text": 1396,
+        "text": 1397,
         "coding": 1330,
         "image": null,
         "agent": null
@@ -379,7 +379,7 @@
       "arenaRanks": {
         "overall": 154,
         "text": 169.0,
-        "coding": 137,
+        "coding": 138,
         "image": null,
         "agent": null
       },
